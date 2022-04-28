@@ -1,0 +1,40 @@
+body {
+    background-color: #2A575A;
+}
+
+nav#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    background-color: #25494D;
+    color: white;
+}
+
+nav ul {
+    margin: 10px 0 0 0;
+}
+
+nav li {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px;
+    background-color: #326267;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+nav a:link {
+    text-decoration: underline;
+    color: lightblue;
+}
+
+nav a:hover {
+    color: lightseagreen;
+}
+
+nav a:visited {
+    color: lightgreen
+}
