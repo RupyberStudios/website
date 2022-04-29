@@ -74,6 +74,12 @@ img.icon {
         nav ul {
             justify-content: space-between;
         }
+        nav li {
+            margin-right: 0;
+        }
+        nav {
+            position: absolute;
+        }
     }
     nav li {
         margin-top: 2px;
