@@ -4,20 +4,37 @@
     --color-blue-light: #55ADB3;
     --color-purple-dark: #9113C2;
     --color-purple-light: #C447D1;
+    --color-youtube: #FF3333;
+    --color-discord: #7289da;
 }
 
 body {
     background-color: var(--color-blue-light);
+    margin: 0;
+    font-family: 'Dongle', sans-serif;
+    font-size: 26px;
+    line-height: 24px;
+    color: white;
+}
+
+h1 {
+    margin: 2vh;
+    text-align: center;
+}
+
+h2 {
+    margin: 1vh;
+    text-align: center;
 }
 
 nav#navbar {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
     background-color: var(--color-blue-dark);
-    color: white;
+    z-index: 100;
 }
 
 nav ul {
@@ -44,17 +61,17 @@ nav li.active {
     background-color: var(--color-purple-dark);
 }
 
-nav a:link {
+a:link {
     text-decoration: underline;
     color: lightblue;
 }
 
-nav a:hover {
+a:hover {
     color: lightseagreen;
 }
 
-nav a:visited {
-    color: lightgreen
+a:visited {
+    color: lightblue
 }
 
 div.container {
@@ -65,11 +82,47 @@ div.container {
     justify-content: center;
 }
 
+div.box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border: 1vw solid;
+    border-top: 0;
+    border-bottom: 0;
+    padding: 6vh 2vw;
+    font-size: 50px;
+    line-height: 40px;
+    background-color: var(--color-blue);
+}
+
+div.youtube {border-color: var(--color-youtube);}
+div.youtube h1 {color: var(--color-youtube);}
+div.discord {border-color: var(--color-discord);}
+div.discord h1 {color: var(--color-discord);}
+div.lightgreen {border-color: lightgreen;}
+div.lightgreen h1 {color: lightgreen;}
+
+.left {
+    position: absolute;
+    left: 2vw;
+}
+.right {
+    position: absolute;
+    right: 2vw;
+}
+
 img.icon {
     margin-right: 10px;
 }
 
-@media screen and (max-width: 1000px) {
+iframe {
+    height: 25vw;
+    width: 15vw;
+}
+
+@media screen and (max-width: 1200px) {
     @media screen and (max-width: 700px) {
         nav ul {
             justify-content: space-between;
@@ -80,9 +133,16 @@ img.icon {
         nav {
             position: absolute;
         }
+        h1 {
+            max-width: 300px;
+        }
     }
     nav li {
         margin-top: 2px;
         margin-bottom: 2px;
-    }    
+    }
+    h1 {
+        max-width: 500px;
+        line-height: 50px;
+    }
 }
