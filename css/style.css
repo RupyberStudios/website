@@ -1,5 +1,13 @@
+:root {
+    --color-blue-dark: #2B585C;
+    --color-blue: #346D71;
+    --color-blue-light: #55ADB3;
+    --color-purple-dark: #9113C2;
+    --color-purple-light: #C447D1;
+}
+
 body {
-    background-color: #2A575A;
+    background-color: var(--color-blue-light);
 }
 
 nav#navbar {
@@ -8,22 +16,32 @@ nav#navbar {
     left: 0;
     width: 100%;
     display: flex;
-    background-color: #25494D;
+    background-color: var(--color-blue-dark);
     color: white;
 }
 
 nav ul {
-    margin: 10px 0 0 0;
+    margin: 10px 0 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 2vw 0 2vw;
 }
 
 nav li {
     text-decoration: none;
     display: inline-block;
-    margin-right: 20px;
-    background-color: #326267;
-    padding: 10px;
+    margin-right: 2vw;
+    background-color: var(--color-blue);
+    padding: 10px 10px 8px 10px;
     text-align: center;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
+    min-width: 6vw;
+    align-self: center;
+}
+
+nav li.active {
+    background-color: var(--color-purple-dark);
 }
 
 nav a:link {
@@ -37,4 +55,28 @@ nav a:hover {
 
 nav a:visited {
     color: lightgreen
+}
+
+div.container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+img.icon {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    @media screen and (max-width: 700px) {
+        nav ul {
+            justify-content: space-between;
+        }
+    }
+    nav li {
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }    
 }
