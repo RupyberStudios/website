@@ -106,6 +106,13 @@ div.box {
     background-color: var(--color-blue);
 }
 
+div.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
 div.youtube {border-color: var(--color-youtube);}
 div.youtube h1 {color: var(--color-youtube);}
 div.discord {border-color: var(--color-discord);}
