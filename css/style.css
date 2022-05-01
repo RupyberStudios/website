@@ -30,17 +30,24 @@ img.background {
 h1 {
     margin: 2vh;
     text-align: center;
-    max-width: 700px;
+    max-width: 1000px;
     line-height: 60px;
 }
 h2 {
     margin: 1vh;
     text-align: center;
-    max-width: 700px;
+    max-width: 1000px;
+    line-height: 50px;
+}
+h3 {
+    margin: 5px;
+    text-align: center;
+    max-width: 1000px;
+    line-height: 40px;
 }
 span.text {
     text-align: center;
-    max-width: 700px;
+    max-width: 1000px;
 }
 
 nav#navbar {
@@ -110,7 +117,6 @@ div.box {
     padding: 6vh 2vw;
     font-size: 50px;
     line-height: 40px;
-    /*background-color: var(--color-blue);*/
 }
 
 div.footer {
@@ -138,8 +144,13 @@ div.youtube {border-color: var(--color-youtube);}
 div.youtube h1 {color: var(--color-youtube);}
 div.discord {border-color: var(--color-discord);}
 div.discord h1 {color: var(--color-discord);}
+div.discord * {max-width: 700px;}
 div.lightgreen {border-color: lightgreen;}
 div.lightgreen h1 {color: lightgreen;}
+div.crimson {border-color: crimson;}
+div.crimson h1 {color: crimson;}
+div.limegreen {border-color: limegreen;}
+div.limegreen h1 {color: limegreen;}
 div.github {border-color: var(--color-github);}
 div.github h1 {color: var(--color-github);}
 div.modrinth {border-color: var(--color-modrinht);}
@@ -156,46 +167,36 @@ div.curseforge h1 {color: var(--color-curseforge);}
     right: 2vw;
 }
 
-img.icon {
-    margin-right: 10px;
-}
+img.icon {margin-right: 10px;}
 
 @media screen and (max-width: 1600px) {
-    h1, h2 {
-        max-width: 600px;
-        line-height: 50px;
-    }
-    span.text {
-        max-width: 600px;
-    }
+    h1, h2, h3, span.text {max-width: 700px;}
+    div.discord * {max-width: 600px;}
 
     @media screen and (max-width: 1400px) {
-        h1, h2, span.text {
-            max-width: 500px;
-        }
+        h1, h2, h3, span.text {max-width: 600px;}
+        div.discord * {max-width: 500px;}
 
         @media screen and (max-width: 1200px) {
             nav li {
                 margin-top: 2px;
                 margin-bottom: 2px;
             }
-            .left, .right {
+            .left {
                 position: static;
+                margin-bottom: 10px;
+            }
+            .right {
+                position: static;
+                margin-top: 10px;
             }
 
             @media screen and (max-width: 700px) {
-                nav ul {
-                    justify-content: space-between;
-                }
-                nav li {
-                    margin-right: 0;
-                }
-                nav#navbar {
-                    position: static;
-                }
-                h1, h2, span.text {
-                    max-width: 300px;
-                }
+                nav ul {justify-content: space-between;}
+                nav li {margin-right: 0;}
+                nav#navbar {position: static;}
+                h1, h2, h3, span.text {max-width: 400px;}
+                div.discord * {max-width: 300px;}
                 img.background {
                     left: auto;
                     width: auto;
