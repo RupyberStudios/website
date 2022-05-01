@@ -193,12 +193,11 @@ img.icon {margin-right: 10px;}
 
             @media screen and (max-width: 700px) {
                 nav ul {justify-content: space-between;}
-                nav li {margin-right: 0;}
+                nav li {margin-right: 5px;}
                 nav#navbar {position: static;}
                 h1, h2, h3, span.text {max-width: 400px;}
                 div.discord * {max-width: 300px;}
                 img.background {
-                    left: auto;
                     width: auto;
                     height: 100%;
                     top: 0;
