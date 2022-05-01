@@ -1,5 +1,6 @@
 :root {
     --color-blue-dark: #122426;
+    --color-blue-dark-transparent: #12242650;
     --color-blue: #193436;
     --color-blue-light: #2b585b;
     --color-purple-dark: #590b78;
@@ -20,10 +21,17 @@ body {
     color: white;
 }
 
+img.background {
+    position: fixed;
+    left: 1vw;
+    width: 98%;
+}
+
 h1 {
     margin: 2vh;
     text-align: center;
     max-width: 700px;
+    line-height: 60px;
 }
 h2 {
     margin: 1vh;
@@ -34,7 +42,6 @@ span.text {
     text-align: center;
     max-width: 700px;
 }
-
 
 nav#navbar {
     position: sticky;
@@ -103,14 +110,28 @@ div.box {
     padding: 6vh 2vw;
     font-size: 50px;
     line-height: 40px;
-    background-color: var(--color-blue);
+    /*background-color: var(--color-blue);*/
 }
 
 div.footer {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 10px;
+    border: 1vw solid var(--color-blue-light);
+    background-color: var(--color-blue-light);
+    border-top: 0;
+    border-bottom: 0;
+    height: 50px;
+}
+
+div.background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-blue-dark-transparent);
+    border-radius: 10px;
 }
 
 div.youtube {border-color: var(--color-youtube);}
@@ -153,7 +174,7 @@ img.icon {
             max-width: 500px;
         }
 
-        @media screen and (max-width: 1150px) {
+        @media screen and (max-width: 1200px) {
             nav li {
                 margin-top: 2px;
                 margin-bottom: 2px;
@@ -174,6 +195,13 @@ img.icon {
                 }
                 h1, h2, span.text {
                     max-width: 300px;
+                }
+                img.background {
+                    left: auto;
+                    width: auto;
+                    height: 100%;
+                    top: 0;
+                    z-index: -1;
                 }
             }
         }
