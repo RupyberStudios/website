@@ -201,6 +201,7 @@ img.icon {margin-right: 10px;}
                     width: auto;
                     height: 100%;
                     top: 0;
+                    left: calc((-700px + 100vw) / 2);
                     z-index: -1;
                 }
             }
