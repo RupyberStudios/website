@@ -90,8 +90,9 @@ nav li {
     border-radius: 10px;
     min-width: 6vw;
     align-self: center;
-    font-size: 35px;
-    line-height: 30px;
+    font-family: 'Koulen', cursive;
+    font-size: 25px;
+    line-height: 25px;
 }
 
 nav li.active {
