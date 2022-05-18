@@ -4,7 +4,7 @@
     --color-blue: #193436;
     --color-blue-light: #2b585b;
     --color-purple-dark: #590b78;
-    --color-purple-light: #732a7b;
+    --color-purple-light: #a63ab2;
     --color-youtube: #FF3333;
     --color-discord: #7289da;
     --color-github: #4078c0;
@@ -73,24 +73,24 @@ nav#navbar {
 }
 
 nav ul {
-    margin: 10px 0 10px 0;
+    margin: 1vh 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 2vw 0 2vw;
+    padding: 0 1vw;
 }
 
 nav li {
     text-decoration: none;
     display: inline-block;
-    margin-right: 2vw;
+    margin-right: 1vw;
     background-color: var(--color-blue);
     padding: 10px 10px 8px 10px;
     text-align: center;
     border-radius: 10px;
-    min-width: 6vw;
     align-self: center;
     font-family: 'Koulen', cursive;
+    color: var(--color-purple-light);
     font-size: 25px;
     line-height: 25px;
 }
@@ -161,24 +161,6 @@ div.background {
     margin: 5px;
 }
 
-div.youtube {border-color: var(--color-youtube);}
-div.youtube h1 {color: var(--color-youtube);}
-div.discord {border-color: var(--color-discord);}
-div.discord h1 {color: var(--color-discord);}
-div.discord * {max-width: 700px;}
-div.lightgreen {border-color: lightgreen;}
-div.lightgreen h1 {color: lightgreen;}
-div.crimson {border-color: crimson;}
-div.crimson h1 {color: crimson;}
-div.limegreen {border-color: limegreen;}
-div.limegreen h1 {color: limegreen;}
-div.github {border-color: var(--color-github);}
-div.github h1 {color: var(--color-github);}
-div.modrinth {border-color: var(--color-modrinht);}
-div.modrinth h1 {color: var(--color-modrinht);}
-div.curseforge {border-color: var(--color-curseforge);}
-div.curseforge h1 {color: var(--color-curseforge);}
-
 .left {
     position: absolute;
     left: 2vw;
@@ -190,7 +172,30 @@ div.curseforge h1 {color: var(--color-curseforge);}
 
 img.icon {margin-right: 10px;}
 
-img.box {background-color: var(--color-blue-light); border-radius: 7px; width: auto;}
+img.box {background-color: var(--color-purple-light); border-radius: 15%; width: auto;}
+
+div.youtube {border-color: var(--color-youtube);}
+div.youtube h1 {color: var(--color-youtube);}
+div.discord {border-color: var(--color-discord);}
+div.discord h1 {color: var(--color-discord);}
+div.discord * {max-width: 700px;}
+div.lightgreen {border-color: lightgreen;}
+div.lightgreen h1 {color: lightgreen;}
+div.lightgreen img.box {background-color: lightgreen;}
+div.crimson {border-color: crimson;}
+div.crimson h1 {color: crimson;}
+div.crimson img.box {background-color: crimson;}
+div.lightpurple {border-color: var(--color-purple-light);}
+div.lightpurple h1 {color: var(--color-purple-light);}
+div.limegreen {border-color: limegreen;}
+div.limegreen h1 {color: limegreen;}
+div.limegreen img.box {background-color: limegreen;}
+div.github {border-color: var(--color-github);}
+div.github h1 {color: var(--color-github);}
+div.modrinth {border-color: var(--color-modrinht);}
+div.modrinth h1 {color: var(--color-modrinht);}
+div.curseforge {border-color: var(--color-curseforge);}
+div.curseforge h1 {color: var(--color-curseforge);}
 
 img.profilepicture {
     height: 100px;
@@ -222,7 +227,7 @@ img.profilepicture {
             }
 
             @media screen and (max-width: 700px) {
-                nav ul {justify-content: space-between;}
+                nav ul {justify-content: space-around;}
                 nav li {margin-right: 5px;}
                 nav#navbar {position: static;}
                 h1, h2, h3, span.text {max-width: 400px;}
