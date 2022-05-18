@@ -29,12 +29,6 @@ body {
     color: white;
 }
 
-img.background {
-    position: fixed;
-    left: 1vw;
-    width: 98%;
-}
-
 h1 {
     margin: 1vh;
     text-align: center;
@@ -232,13 +226,6 @@ img.profilepicture {
                 nav#navbar {position: static;}
                 h1, h2, h3, span.text {max-width: 400px;}
                 div.discord * {max-width: 300px;}
-                img.background {
-                    width: auto;
-                    height: 100%;
-                    top: 0;
-                    left: calc((-720px + 100vw) / 2);
-                    z-index: -1;
-                }
             }
         }
     }

@@ -1,0 +1,17 @@
+:root {
+    --color-blue-light: #2b585b;
+    --color-blue-dark: #122426;
+}
+
+body {
+    background-color: var(--color-blue-light);
+}
+
+img.background {
+    display: none;
+}
+
+div.footer {
+    border: 1vw solid var(--color-blue-dark);
+    background-color: var(--color-blue-dark);
+}
