@@ -113,6 +113,7 @@ div.container {
     margin: auto;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 div.box {
@@ -155,6 +156,10 @@ div.background {
     margin: 5px;
 }
 
+div.column-half {
+    width: calc(30vw + 90px); margin: 0 20px;
+}
+
 .left {
     position: absolute;
     left: 2vw;
@@ -173,17 +178,20 @@ div.youtube h1 {color: var(--color-youtube);}
 div.discord {border-color: var(--color-discord);}
 div.discord h1 {color: var(--color-discord);}
 div.discord * {max-width: 700px;}
-div.lightgreen {border-color: lightgreen;}
-div.lightgreen h1 {color: lightgreen;}
-div.lightgreen img.box {background-color: lightgreen;}
-div.crimson {border-color: crimson;}
-div.crimson h1 {color: crimson;}
-div.crimson img.box {background-color: crimson;}
 div.lightpurple {border-color: var(--color-purple-light);}
 div.lightpurple h1 {color: var(--color-purple-light);}
+div.crimson {border-color: crimson;}
+div.crimson h1, h1.crimson {color: crimson !important;}
+img.box.crimson, div.crimson img.box {background-color: crimson;}
+div.lightgreen {border-color: lightgreen;}
+div.lightgreen h1, h1.lightgreen {color: lightgreen !important;}
+img.box.lightgreen, div.lightgreen img.box {background-color: lightgreen;}
 div.limegreen {border-color: limegreen;}
-div.limegreen h1 {color: limegreen;}
-div.limegreen img.box {background-color: limegreen;}
+div.limegreen h1, h1.limegreen {color: limegreen !important;}
+img.box.limegreen, div.limegreen img.box {background-color: limegreen;}
+div.aquamarine {border-color: aquamarine;}
+div.aquamarine h1, h1.aquamarine {color: aquamarine !important;}
+img.box.aquamarine, div.aquamarine img.box {background-color: aquamarine;}
 div.github {border-color: var(--color-github);}
 div.github h1 {color: var(--color-github);}
 div.modrinth {border-color: var(--color-modrinht);}
@@ -219,12 +227,13 @@ img.profilepicture {
                 position: static;
                 margin-top: 10px;
             }
+            div.column-half {width: 85vw;}
 
             @media screen and (max-width: 700px) {
                 nav ul {justify-content: space-around;}
                 nav li {margin-right: 5px;}
                 nav#navbar {position: static;}
-                h1, h2, h3, span.text {max-width: 400px;}
+                h1, h2, h3, span.text {max-width: 80vw;}
                 div.discord * {max-width: 300px;}
             }
         }

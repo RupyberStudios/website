@@ -12,6 +12,8 @@ img.background {
 }
 
 div.footer {
-    border: 1vw solid var(--color-blue-dark);
     background-color: var(--color-blue-dark);
+    border: 1vw solid var(--color-blue-dark);
+    border-top: 0;
+    border-bottom: 0;
 }

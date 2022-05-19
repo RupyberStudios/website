@@ -1,5 +1,6 @@
 :root {
     --color-blue-dark: #122426;
+    --color-blue-light: #2b585b;
     --color-blue-light-transparent: #2b585bc0;
 }
 
@@ -20,4 +21,12 @@ div.background {
     padding: 10px;
     padding-bottom: 4px;
     margin: 5px;
+}
+
+nav#navbar {
+    background-color: var(--color-blue-light);
+}
+
+nav li {
+    background-color: var(--color-blue-dark);
 }
