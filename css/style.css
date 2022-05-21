@@ -193,11 +193,11 @@ div.aquamarine {border-color: aquamarine;}
 div.aquamarine h1, h1.aquamarine {color: aquamarine !important;}
 img.box.aquamarine, div.aquamarine img.box {background-color: aquamarine;}
 div.github {border-color: var(--color-github);}
-div.github h1 {color: var(--color-github);}
+div.github h1 {color: var(--color-github) !important;}
 div.modrinth {border-color: var(--color-modrinht);}
-div.modrinth h1 {color: var(--color-modrinht);}
+div.modrinth h1 {color: var(--color-modrinht) !important;}
 div.curseforge {border-color: var(--color-curseforge);}
-div.curseforge h1 {color: var(--color-curseforge);}
+div.curseforge h1 {color: var(--color-curseforge) !important;}
 
 img.profilepicture {
     height: 100px;
