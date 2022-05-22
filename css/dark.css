@@ -30,3 +30,6 @@ nav#navbar {
 nav li {
     background-color: var(--color-blue-dark);
 }
+
+::-webkit-scrollbar-track {background-color: var(--color-blue-light);}
+::-webkit-scrollbar-thumb {background-color: var(--color-blue-dark);}
