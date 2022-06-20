@@ -1,10 +1,11 @@
 :root {
-    --color-blue-dark: #122426;
-    --color-blue-dark-transparent: #122426c0;
-    --color-blue: #193436;
-    --color-blue-light: #2b585b;
+    --color-dark-1: #242424;
+    --color-dark-1-transparent: #242424c0;
+    --color-dark-2: #363636;
+    --color-light-1: #e6e6e6;
+    --color-light-2: #5c5c5c;
     --color-purple-dark: #590b78;
-    --color-purple-light: #a63ab2;
+    --color-purple-light: #cd16e2;
     --color-youtube: #FF3333;
     --color-discord: #7289da;
     --color-github: #4078c0;
@@ -23,7 +24,7 @@
 }
 
 body {
-    background-color: var(--color-blue-light);
+    background-color: var(--color-light-1);
     margin: 0;
     font-family: 'Dongle', sans-serif;
     color: white;
@@ -62,7 +63,7 @@ nav#navbar {
     left: 0;
     width: 100%;
     display: flex;
-    background-color: var(--color-blue-dark);
+    background-color: var(--color-dark-1);
     z-index: 100;
 }
 
@@ -78,7 +79,7 @@ nav li {
     text-decoration: none;
     display: inline-block;
     margin-right: 1vw;
-    background-color: var(--color-blue);
+    background-color: var(--color-dark-2);
     padding: 10px 10px 8px 10px;
     text-align: center;
     border-radius: 10px;
@@ -90,21 +91,16 @@ nav li {
 }
 
 nav li.active {
-    background-color: var(--color-purple-dark);
+    background-color: var(--color-light-2);
 }
 
 a:link {
     text-decoration: underline;
     color: lightblue;
 }
-
-a:hover {
-    color: lightseagreen;
+a:hover {color: lightseagreen;
 }
-
-a:visited {
-    color: lightblue
-}
+a:visited {color: lightblue;}
 
 div.container {
     display: flex;
@@ -136,20 +132,23 @@ div.footer {
     align-items: center;
     justify-content: center;
     padding-top: 10px;
-    border: 1vw solid var(--color-blue-light);
-    background-color: var(--color-blue-light);
+    border: 1vw solid var(--color-light-1);
+    background-color: var(--color-light-1);
     border-top: 0;
     border-bottom: 0;
     height: 55px;
     line-height: 30px;
     font-size: 35px;
+    color: var(--color-dark-1);
 }
+
+div.footer a {color: cadetblue;}
 
 div.background {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--color-blue-dark-transparent);
+    background-color: var(--color-dark-1-transparent);
     border-radius: 10px;
     padding: 10px;
     padding-bottom: 4px;
@@ -207,9 +206,9 @@ img.profilepicture {
 }
 
 ::-webkit-scrollbar {width: 15px;}
-::-webkit-scrollbar-track {background-color: var(--color-blue-dark);}
+::-webkit-scrollbar-track {background-color: var(--color-dark-1);}
 ::-webkit-scrollbar-thumb {
-    background-color: var(--color-blue-light);
+    background-color: var(--color-light-1);
     border-radius: 7.5px;
 }
 

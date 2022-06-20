@@ -1,10 +1,10 @@
 :root {
-    --color-blue-light: #2b585b;
-    --color-blue-dark: #122426;
+    --color-light-1: #e6e6e6;
+    --color-dark-1: #242424;
 }
 
 body {
-    background-color: var(--color-blue-light);
+    background-color: var(--color-light-1);
 }
 
 img.background {
@@ -12,8 +12,8 @@ img.background {
 }
 
 div.footer {
-    background-color: var(--color-blue-dark);
-    border: 1vw solid var(--color-blue-dark);
+    background-color: var(--color-dark-1);
+    border: 1vw solid var(--color-dark-1);
     border-top: 0;
     border-bottom: 0;
 }

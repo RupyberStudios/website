@@ -1,12 +1,15 @@
 :root {
-    --color-blue-dark: #122426;
-    --color-blue-light: #2b585b;
-    --color-blue-light-transparent: #2b585bc0;
+    --color-dark-1: #242424;
+    --color-light-1: #e6e6e6;
 }
 
 body {
-    background-color: var(--color-blue-dark);
+    background-color: var(--color-dark-1);
+    color: black;
 }
+
+a:link {color: cadetblue;}
+a:visited {color: cadetblue;}
 
 img.background {
     display: none;
@@ -16,7 +19,7 @@ div.background {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--color-blue-light-transparent);
+    background-color: var(--color-light-1);
     border-radius: 10px;
     padding: 10px;
     padding-bottom: 4px;
@@ -24,12 +27,12 @@ div.background {
 }
 
 nav#navbar {
-    background-color: var(--color-blue-light);
+    background-color: var(--color-light-1);
 }
 
 nav li {
-    background-color: var(--color-blue-dark);
+    background-color: var(--color-dark-1);
 }
 
-::-webkit-scrollbar-track {background-color: var(--color-blue-light);}
-::-webkit-scrollbar-thumb {background-color: var(--color-blue-dark);}
+::-webkit-scrollbar-track {background-color: var(--color-light-1);}
+::-webkit-scrollbar-thumb {background-color: var(--color-dark-1);}
