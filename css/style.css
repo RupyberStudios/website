@@ -127,7 +127,8 @@ div.box {
 }
 
 div.footer {
-    position: relative;
+    position: sticky;
+    bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,6 +141,11 @@ div.footer {
     line-height: 30px;
     font-size: 35px;
     color: var(--color-dark-1);
+}
+
+div.footer-bottom {
+    position: fixed;
+    width: 100%;
 }
 
 div.footer a {color: cadetblue;}
@@ -233,6 +239,7 @@ img.profilepicture {
                 position: static;
                 margin-top: 10px;
             }
+            div.footer-bottom {position: sticky;}
             div.column-half {width: 85vw;}
             ::-webkit-scrollbar {width: 10px;}
             ::-webkit-scrollbar-thumb {border-radius: 5px;}
