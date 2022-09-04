@@ -197,6 +197,9 @@ img.box.limegreen, div.limegreen img.box {background-color: limegreen;}
 div.aquamarine {border-color: aquamarine;}
 div.aquamarine h1, h1.aquamarine {color: aquamarine !important;}
 img.box.aquamarine, div.aquamarine img.box {background-color: aquamarine;}
+div.magenta {border-color: magenta;}
+div.magenta h1, h1.magenta {color: magenta !important;}
+img.box.magenta, div.magenta img.box {background-color: magenta;}
 div.github {border-color: var(--color-github);}
 div.github h1 {color: var(--color-github) !important;}
 div.modrinth {border-color: var(--color-modrinht);}
