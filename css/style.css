@@ -7,9 +7,9 @@
     --color-purple-dark: #590b78;
     --color-purple-light: #cd16e2;
     --color-youtube: #FF3333;
-    --color-discord: #7289da;
+    --color-discord: #5865F2;
     --color-github: #4078c0;
-    --color-modrinht: #1bd96a;
+    --color-modrinth: #1bd96a;
     --color-curseforge: #F16436;
 }
 
@@ -85,7 +85,7 @@ nav li {
     border-radius: 10px;
     align-self: center;
     font-family: 'Koulen', cursive;
-    color: var(--color-purple-light);
+    color: var(--color-light-1);
     font-size: 25px;
     line-height: 25px;
 }
@@ -96,11 +96,10 @@ nav li.active {
 
 a:link {
     text-decoration: underline;
-    color: lightblue;
+    color: white;
 }
-a:hover {color: lightseagreen;
-}
-a:visited {color: lightblue;}
+a:hover {color: white;}
+a:visited {color: white;}
 
 div.container {
     display: flex;
@@ -121,7 +120,7 @@ div.box {
     border: 1vw solid;
     border-top: 0;
     border-bottom: 0;
-    padding: 6vh 2vw;
+    padding: 3vh 2vw;
     font-size: 50px;
     line-height: 40px;
 }
@@ -156,8 +155,8 @@ div.background {
     align-items: center;
     background-color: var(--color-dark-1-transparent);
     border-radius: 10px;
-    padding: 10px;
-    padding-bottom: 4px;
+    padding: 15px;
+    padding-bottom: 10px;
     margin: 5px;
 }
 
@@ -177,6 +176,30 @@ div.column-half {
 img.icon {margin-right: 10px;}
 
 img.box {background-color: var(--color-purple-light); border-radius: 15%; width: auto;}
+
+img.profilepicture {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+div.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 5px solid var(--color-light-2);
+    border-radius: 15px;
+    padding: 4px;
+    margin: 4px;
+}
+
+div.button img.profilepicture {
+    margin-bottom: 0;
+    height: 50px;
+    width: 50px;
+    margin-left: 6px;
+}
 
 div.youtube {border-color: var(--color-youtube);}
 div.youtube h1 {color: var(--color-youtube);}
@@ -202,17 +225,10 @@ div.magenta h1, h1.magenta {color: magenta !important;}
 img.box.magenta, div.magenta img.box {background-color: magenta;}
 div.github {border-color: var(--color-github);}
 div.github h1 {color: var(--color-github) !important;}
-div.modrinth {border-color: var(--color-modrinht);}
-div.modrinth h1 {color: var(--color-modrinht) !important;}
+div.modrinth {border-color: var(--color-modrinth);}
+div.modrinth h1 {color: var(--color-modrinth) !important;}
 div.curseforge {border-color: var(--color-curseforge);}
 div.curseforge h1 {color: var(--color-curseforge) !important;}
-
-img.profilepicture {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
 
 ::-webkit-scrollbar {width: 15px;}
 ::-webkit-scrollbar-track {background-color: var(--color-dark-1);}
@@ -250,7 +266,6 @@ img.profilepicture {
             @media screen and (max-width: 700px) {
                 nav ul {justify-content: space-around;}
                 nav li {margin-right: 5px;}
-                nav#navbar {position: static;}
                 h1, h2, h3, span.text {max-width: 80vw;}
                 div.discord * {max-width: 300px;}
             }

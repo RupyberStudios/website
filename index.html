@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Koulen&display=swap" rel="stylesheet">
         <title>Rupyber Studios - Home</title>
     </head>
-    <body>
+    <body onresize="onResize()">
         <nav id="navbar">
             <ul>
                 <li>
@@ -20,35 +20,40 @@
                         <img class="icon" src="./img/logo_square.png" alt="Rupyber Studios Logo" height="25" style="border-radius: 20%;"> Rupyber Studios
                     </div>
                 </li>
-                <li class="active">
+                <li id="menu">
+                    <div class="container">
+                        <img class="icon" src="../../img/menu.svg" alt="Menu Icon" height="25" style="margin-right: 0;">
+                    </div>
+                </li>
+                <li id="home" class="active">
                     <a href="./index.html">
                         <div class="container">
                             <img class="icon" src="./img/home.svg" alt="Home Icon" height="25"> Home
                         </div>
                     </a>
                 </li>
-                <li>
+                <li id="projects">
                     <a href="./pages/projects/index.html">
                         <div class="container">
                             <img class="icon" src="./img/projects.svg" alt="Projects Icon" height="25"> Projects
                         </div>
                     </a>
                 </li>
-                <li>
+                <li id="about">
                     <a href="./pages/about/index.html">
                         <div class="container">
                             <img class="icon" src="./img/about.svg" alt="About Icon" height="25"> About
                         </div>
                     </a>
                 </li>
-                <li>
+                <li id="events">
                     <a href="./pages/events/index.html">
                         <div class="container">
                             <img class="icon" src="./img/events.svg" alt="About Icon" height="25"> Events
                         </div>
                     </a>
                 </li>
-                <li>
+                <li id="posts">
                     <a href="./pages/posts/index.html">
                         <div class="container">
                             <img class="icon" src="./img/posts.svg" alt="Posts Icon" height="25"> Posts
@@ -82,20 +87,20 @@
                             Here you can explore our projects, find out who we are, check the events and our posts!
                         </span>
                         <img src="./img/about.svg" alt="About Icon" class="box crimson" height="50" style="margin-top: 25px; margin-bottom: 10px;">
-                        <h1 class="crimson">What is Rupyber Studios</h1>
+                        <h1 class="crimson">The team</h1>
                         <span class="text">
                             Rupyber Studios is a team composed by a Creative Director, a Developer and some Artists.
                             We are currently working on a Minecraft mod called Improved End.
                             You can find out more in the <a href="./pages/about/index.html">About</a> page of this website.
                         </span>
                         <img src="./img/events.svg" alt="Events Icon" class="box lightgreen" height="50" style="margin-top: 25px; margin-bottom: 10px;">
-                        <h1 class="lightgreen">You may be intrested in our Events</h1>
+                        <h1 class="lightgreen">Plannings</h1>
                         <span class="text">
                             Check out the <a href="./pages/events/index.html">Events</a> page of this website to
                             discover what we planned for the future!
                         </span>
                         <img src="./img/posts.svg" alt="Posts Icon" class="box limegreen" height="50" style="margin-top: 25px; margin-bottom: 10px;">
-                        <h1 class="limegreen">Stay up to date with our posts</h1>
+                        <h1 class="limegreen">From us</h1>
                         <span class="text">
                             You can view our <a href="./pages/posts/index.html">Posts</a> in a dedicated page of this website.
                         </span>
@@ -129,5 +134,6 @@
         </div>
 
         <script src="./js/themeselector-home.js"></script>
+        <script src="../../js/mobile-navbar.js"></script>
     </body>
 </html>

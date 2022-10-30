@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Koulen&display=swap" rel="stylesheet">
         <title>Rupyber Studios - About</title>
     </head>
-    <body>
+    <body onresize="onResize()">
         <nav id="navbar">
             <ul>
                 <li>
@@ -19,35 +19,40 @@
                         <img class="icon" src="../../img/logo_square.png" alt="Rupyber Studios Logo" height="25" style="border-radius: 20%;"> Rupyber Studios
                     </div>
                 </li>
-                <li>
+                <li id="menu">
+                    <div class="container">
+                        <img class="icon" src="../../img/menu.svg" alt="Menu Icon" height="25" style="margin-right: 0;">
+                    </div>
+                </li>
+                <li id="home">
                     <a href="../../index.html">
                         <div class="container">
                             <img class="icon" src="../../img/home.svg" alt="Home Icon" height="25"> Home
                         </div>
                     </a>
                 </li>
-                <li>
+                <li id="projects">
                     <a href="../projects/index.html">
                         <div class="container">
                             <img class="icon" src="../../img/projects.svg" alt="Projects Icon" height="25"> Projects
                         </div>
                     </a>
                 </li>
-                <li class="active">
+                <li id="about" class="active">
                     <a href="./index.html">
                         <div class="container">
                             <img class="icon" src="../../img/about.svg" alt="About Icon" height="25"> About
                         </div>
                     </a>
                 </li>
-                <li>
+                <li id="events">
                     <a href="../events/index.html">
                         <div class="container">
                             <img class="icon" src="../../img/events.svg" alt="About Icon" height="25"> Events
                         </div>
                     </a>
                 </li>
-                <li>
+                <li id="posts">
                     <a href="../posts/index.html">
                         <div class="container">
                             <img class="icon" src="../../img/posts.svg" alt="Posts Icon" height="25"> Posts
@@ -111,7 +116,9 @@
                 <h1>Official Discord Server</h1>
                 <span class="text">Our Server where you can explore our projects, report bugs, suggest features,
                     partecipate in our events and much more</span>
-                <h2><a href="https://discord.gg/AgPTkkQveF">Join The Official Discord Server Here</a></h2>
+                <div class="button discord">
+                    <h2><a href="https://discord.gg/AgPTkkQveF" style="color: var(--color-discord);">Join Here</a></h2>
+                </div>
             </div>
             <iframe src="https://discord.com/widget?id=951499476726583316&theme=dark" class="right" height="350px"
             allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
@@ -120,25 +127,19 @@
         <div class="box crimson">
             <div class="background">
                 <h1>Our Profiles</h1>
-            </div>
-            <div class="container">
-                <!--github-->
-                <div class="background github">
-                    <img src="../../img/github.svg" alt="GitHub Icon" class="profilepicture">
-                    <h1>GitHub</h1>
-                    <h2><a href="https://github.com/RupyberStudios/" target="_blank">Visit Our Profile</a></h2>
-                </div>
-                <!--curseforge-->
-                <div class="background curseforge">
-                    <img src="../../img/curseforge.svg" alt="CurseForge Icon" class="profilepicture">
-                    <h1>CurseForge</h1>
-                    <h2><a href="https://www.curseforge.com/members/rupyberstudios/projects" target="_blank">Visit Our Profile</a></h2>
-                </div>
-                <!--modrinth-->
-                <div class="background modrinth">
-                    <img src="../../img/modrinth.svg" alt="Modrinth Icon" class="profilepicture">
-                    <h1>Modrinth</h1>
-                    <h2><a href="https://modrinth.com/user/RupyberStudios" target="_blank">Visit Our Profile</a></h2>
+                <div class="container">
+                    <div class="button github">
+                        <img src="../../img/github.svg" alt="GitHub Icon" class="profilepicture">
+                        <h1><a href="https://github.com/RupyberStudios/" target="_blank" style="color: var(--color-github);">GitHub</a></h1>
+                    </div>
+                    <div class="button curseforge">
+                        <img src="../../img/curseforge.svg" alt="CurseForge Icon" class="profilepicture">
+                        <h1><a href="https://www.curseforge.com/members/rupyberstudios/projects" target="_blank" style="color: var(--color-curseforge);">CurseForge</a></h1>
+                    </div>
+                    <div class="button modrinth">
+                        <img src="../../img/modrinth.svg" alt="Modrinth Icon" class="profilepicture">
+                        <h1><a href="https://modrinth.com/user/RupyberStudios" target="_blank" style="color: var(--color-modrinth);">Modrinth</a></h1>
+                    </div>
                 </div>
             </div>
         </div>
@@ -150,5 +151,6 @@
         </div>
 
         <script src="../../js/themeselector.js"></script>
+        <script src="../../js/mobile-navbar.js"></script>
     </body>
 </html>

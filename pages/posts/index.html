@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Koulen&display=swap" rel="stylesheet">
         <title>Rupyber Studios - Posts</title>
     </head>
-    <body>
+    <body onresize="onResize()">
         <nav id="navbar">
             <ul>
                 <li>
@@ -19,35 +19,40 @@
                         <img class="icon" src="../../img/logo_square.png" alt="Rupyber Studios Logo" height="25" style="border-radius: 20%;"> Rupyber Studios
                     </div>
                 </li>
-                <li>
+                <li id="menu">
+                    <div class="container">
+                        <img class="icon" src="../../img/menu.svg" alt="Menu Icon" height="25" style="margin-right: 0;">
+                    </div>
+                </li>
+                <li id="home">
                     <a href="../../index.html">
                         <div class="container">
                             <img class="icon" src="../../img/home.svg" alt="Home Icon" height="25"> Home
                         </div>
                     </a>
                 </li>
-                <li>
+                <li id="projects">
                     <a href="../projects/index.html">
                         <div class="container">
                             <img class="icon" src="../../img/projects.svg" alt="Projects Icon" height="25"> Projects
                         </div>
                     </a>
                 </li>
-                <li>
+                <li id="about">
                     <a href="../about/index.html">
                         <div class="container">
                             <img class="icon" src="../../img/about.svg" alt="About Icon" height="25"> About
                         </div>
                     </a>
                 </li>
-                <li>
+                <li id="events">
                     <a href="../events/index.html">
                         <div class="container">
                             <img class="icon" src="../../img/events.svg" alt="About Icon" height="25"> Events
                         </div>
                     </a>
                 </li>
-                <li class="active">
+                <li id="posts" class="active">
                     <a href="../posts/index.html">
                         <div class="container">
                             <img class="icon" src="../../img/posts.svg" alt="Posts Icon" height="25"> Posts
@@ -127,5 +132,6 @@
         </div>
 
         <script src="../../js/themeselector.js"></script>
+        <script src="../../js/mobile-navbar.js"></script>
     </body>
 </html>

@@ -2,13 +2,13 @@ let switches = document.getElementsByClassName('switch');
 
 let style = localStorage.getItem('style');
 
-if (style == null) {
+if(style == null) {
   setTheme('image');
 } else {
   setTheme(style);
 }
 
-for (let i of switches) {
+for(let i of switches) {
   i.addEventListener('click', function () {
     let theme = this.dataset.theme;
     setTheme(theme);

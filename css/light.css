@@ -3,10 +3,6 @@
     --color-dark-1: #242424;
 }
 
-body {
-    background-color: var(--color-light-1);
-}
-
 img.background {
     display: none;
 }

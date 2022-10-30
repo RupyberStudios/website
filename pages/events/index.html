@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Koulen&display=swap" rel="stylesheet">
         <title>Rupyber Studios - Events</title>
     </head>
-    <body>
+    <body onresize="onResize()">
         <nav id="navbar">
             <ul>
                 <li>
@@ -19,35 +19,40 @@
                         <img class="icon" src="../../img/logo_square.png" alt="Rupyber Studios Logo" height="25" style="border-radius: 20%;"> Rupyber Studios
                     </div>
                 </li>
-                <li>
+                <li id="menu">
+                    <div class="container">
+                        <img class="icon" src="../../img/menu.svg" alt="Menu Icon" height="25" style="margin-right: 0;">
+                    </div>
+                </li>
+                <li id="home">
                     <a href="../../index.html">
                         <div class="container">
                             <img class="icon" src="../../img/home.svg" alt="Home Icon" height="25"> Home
                         </div>
                     </a>
                 </li>
-                <li>
+                <li id="projects">
                     <a href="../projects/index.html">
                         <div class="container">
                             <img class="icon" src="../../img/projects.svg" alt="Projects Icon" height="25"> Projects
                         </div>
                     </a>
                 </li>
-                <li>
+                <li id="about">
                     <a href="../about/index.html">
                         <div class="container">
                             <img class="icon" src="../../img/about.svg" alt="About Icon" height="25"> About
                         </div>
                     </a>
                 </li>
-                <li class="active">
+                <li id="events" class="active">
                     <a href="./index.html">
                         <div class="container">
                             <img class="icon" src="../../img/events.svg" alt="About Icon" height="25"> Events
                         </div>
                     </a>
                 </li>
-                <li>
+                <li id="posts">
                     <a href="../posts/index.html">
                         <div class="container">
                             <img class="icon" src="../../img/posts.svg" alt="Posts Icon" height="25"> Posts
@@ -71,28 +76,40 @@
         </nav>
         <img src="../../img/background.png" alt="background" class="background">
         
-        <!--beta-->
-        <div class="box crimson">
-            <img src="../../img/improved_end_beta.png" alt="Improved End Beta Icon" class="left" height="100" style="border-radius: 10px; border: 4px solid black; background-color: black;">
+        <!--minecraft legends beta release-->
+        <div class="box aquamarine">
+            <img src="../../img/minecraft_legends_mod_beta.png" alt="Minecraft Legends Mod Beta" class="left" height="100" style="border-radius: 10px; border: 4px solid aquamarine; background-color: aquamarine;">
             <div class="background">
-                <img class="icon" src="../../img/improved_end_logo_small.png" alt="Improved End Logo" height="55" style="border-radius: 8px; margin-bottom: 10px;">
+                <img class="icon" src="../../img/minecraft_legends_mod_logo_small.png" alt="Minecraft Legends Mod Logo" height="55" style="border-radius: 8px; margin-bottom: 10px;">
                 <h1>Beta Release</h1>
-                <h3><img class="icon box" src="../../img/calendar.svg" alt="About Icon" height="40">On: 10 August 2022</h3>
-                <h3><img class="icon box" src="../../img/clock.svg" alt="About Icon" height="40">At: 15:00 UTC</h3>
+                <h3><img class="icon box" src="../../img/calendar.svg" alt="About Icon" height="40">On: 31/10/2022</h3>
+                <h3><img class="icon box" src="../../img/clock.svg" alt="About Icon" height="40">At: 13:00 UTC</h3>
                 <h3><img class="icon box" src="../../img/location.svg" alt="About Icon" height="40">In: Rupyber Studios Discord Server</h3>
-                <span class="text">The first Beta of the Improved End mod released to public</span>
+                <span class="text">The first Beta version of Minecraft Legends Mod released to public</span>
             </div>
         </div>
-        <!--1.0.0-->
+        <!--improved end 1.0.0-->
         <div class="box limegreen">
             <img src="../../img/improved_end_release.png" alt="Improved End Release Icon" class="left" height="100" style="border-radius: 10px; border: 4px solid #6D278C; background-color: #6D278C;">
             <div class="background">
                 <img class="icon" src="../../img/improved_end_logo_small.png" alt="Improved End Logo" height="55" style="border-radius: 8px; margin-bottom: 10px;">
                 <h1>Official Release</h1>
-                <h3><img class="icon box" src="../../img/calendar.svg" alt="About Icon" height="40">On: 1 September 2022</h3>
+                <h3><img class="icon box" src="../../img/calendar.svg" alt="About Icon" height="40">On: 01/09/2022</h3>
                 <h3><img class="icon box" src="../../img/clock.svg" alt="About Icon" height="40">At: 15:00 UTC</h3>
                 <h3><img class="icon box" src="../../img/location.svg" alt="About Icon" height="40">In: Rupyber Studios Discord Server</h3>
-                <span class="text">The first Official version of the Improved End mod released to public</span>
+                <span class="text">The first Official version of Improved End released to public</span>
+            </div>
+        </div>
+        <!--improved end beta-->
+        <div class="box crimson">
+            <img src="../../img/improved_end_beta.png" alt="Improved End Beta Icon" class="left" height="100" style="border-radius: 10px; border: 4px solid black; background-color: black;">
+            <div class="background">
+                <img class="icon" src="../../img/improved_end_logo_small.png" alt="Improved End Logo" height="55" style="border-radius: 8px; margin-bottom: 10px;">
+                <h1>Beta Release</h1>
+                <h3><img class="icon box" src="../../img/calendar.svg" alt="About Icon" height="40">On: 10/08/2022</h3>
+                <h3><img class="icon box" src="../../img/clock.svg" alt="About Icon" height="40">At: 15:00 UTC</h3>
+                <h3><img class="icon box" src="../../img/location.svg" alt="About Icon" height="40">In: Rupyber Studios Discord Server</h3>
+                <span class="text">The first Beta version of Improved End released to public</span>
             </div>
         </div>
 
@@ -103,5 +120,6 @@
         </div>
 
         <script src="../../js/themeselector.js"></script>
+        <script src="../../js/mobile-navbar.js"></script>
     </body>
 </html>
