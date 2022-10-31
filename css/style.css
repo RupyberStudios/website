@@ -247,11 +247,11 @@ div.magenta {border-color: magenta;}
 div.magenta h1, h1.magenta {color: magenta !important;}
 img.box.magenta, div.magenta img.box {background-color: magenta;}
 div.github {border-color: var(--color-github);}
-div.github h1, div.github a {color: var(--color-github) !important;}
+div.github h1, a.github {color: var(--color-github) !important;}
 div.modrinth {border-color: var(--color-modrinth);}
-div.modrinth h1, div.modrinth a {color: var(--color-modrinth) !important;}
+div.modrinth h1, a.modrinth {color: var(--color-modrinth) !important;}
 div.curseforge {border-color: var(--color-curseforge);}
-div.curseforge h1, div.curseforge a {color: var(--color-curseforge) !important;}
+div.curseforge h1, a.curseforge {color: var(--color-curseforge) !important;}
 
 ::-webkit-scrollbar {width: 15px;}
 ::-webkit-scrollbar-track {background-color: var(--color-dark-1);}
