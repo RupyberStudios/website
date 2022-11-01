@@ -90,9 +90,9 @@ nav li {
     line-height: 25px;
 }
 
-nav li.active {
-    background-color: var(--color-light-2);
-}
+nav li.active {background-color: var(--color-light-2);}
+
+nav li.hover:hover {background-color: darkslategray;}
 
 a:link {
     text-decoration: underline;
@@ -194,6 +194,8 @@ div.button {
     padding: 4px;
     margin: 4px;
 }
+
+div.button:hover {border-color: cadetblue;background-color: darkslategray;}
 
 div.button img.profilepicture {
     margin-bottom: 0;
