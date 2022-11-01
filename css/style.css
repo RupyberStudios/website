@@ -291,6 +291,7 @@ div.curseforge h1, a.curseforge {color: var(--color-curseforge) !important;}
                 nav li {margin-right: 5px;}
                 h1, h2, h3, span.text {max-width: 80vw;}
                 div.discord * {max-width: 300px;}
+                div.footer {position: relative;}
                 div.button h1 {
                     line-height: 32px;
                     font-size: 45px;
