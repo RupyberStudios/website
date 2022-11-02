@@ -226,6 +226,12 @@ div.tag span {
     margin-top: 6px;
 }
 
+span.administrator {color: #e74c3c;}
+span.chief-developer {color: #e67e22;}
+span.artist {color: #2ecc71;}
+span.animator {color: #994cb1;}
+span.sound-designer {color: #00c79c;}
+
 div.youtube {border-color: var(--color-youtube);}
 div.youtube h1 {color: var(--color-youtube);}
 div.discord {border-color: var(--color-discord);}
@@ -248,6 +254,9 @@ img.box.aquamarine, div.aquamarine img.box {background-color: aquamarine;}
 div.magenta {border-color: magenta;}
 div.magenta h1, h1.magenta {color: magenta !important;}
 img.box.magenta, div.magenta img.box {background-color: magenta;}
+div.fuxia {border-color: #e91e63;}
+div.fuxia h1, h1.fuxia {color: #e91e63 !important;}
+img.box.fuxia, div.fuxia img.box {background-color: #e91e63;}
 div.github {border-color: var(--color-github);}
 div.github h1, a.github {color: var(--color-github) !important;}
 div.modrinth {border-color: var(--color-modrinth);}
