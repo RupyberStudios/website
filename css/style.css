@@ -185,6 +185,8 @@ img.profilepicture {
     margin-bottom: 10px;
 }
 
+img.logo {height: calc(5vh + 4vw + 5px);}
+
 div.button {
     display: flex;
     flex-direction: row;
@@ -293,6 +295,7 @@ div.curseforge h1, a.curseforge {color: var(--color-curseforge) !important;}
                 margin-top: 10px;
             }
             div.footer-bottom {position: sticky;}
+            img.logo {height: calc(6vh + 6vw + 5px);}
             div.column-half {width: 85vw;}
             ::-webkit-scrollbar {width: 10px;}
             ::-webkit-scrollbar-thumb {border-radius: 5px;}
