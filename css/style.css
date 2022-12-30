@@ -121,7 +121,7 @@ div.box {
     border: 1vw solid;
     border-top: 0;
     border-bottom: 0;
-    padding: 3vh 2vw;
+    padding: 1vh 2vw;
     font-size: 50px;
     line-height: 40px;
 }
@@ -145,7 +145,7 @@ div.footer {
 
 div.footer-bottom {
     position: fixed;
-    width: 100%;
+    width: 98vw;
 }
 
 div.footer a {color: cadetblue;}
@@ -197,6 +197,8 @@ div.button {
     margin: 4px;
 }
 
+div.button.active {border-color: yellow;}
+
 div.button:hover {border-color: cadetblue;background-color: darkslategray;}
 
 div.button img.profilepicture {
@@ -204,6 +206,17 @@ div.button img.profilepicture {
     height: 50px;
     width: 50px;
     margin-left: 6px;
+}
+
+div.tags {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 3px;
 }
 
 div.tag {
@@ -215,7 +228,7 @@ div.tag {
     border-radius: 10px;
     padding: 3px;
     padding-bottom: 0;
-    margin: 0 3px 17px 3px;
+    margin: 0 3px 6px 3px;
 }
 
 div.tag img {
@@ -259,6 +272,9 @@ img.box.magenta, div.magenta img.box {background-color: magenta;}
 div.fuxia {border-color: #e91e63;}
 div.fuxia h1, h1.fuxia {color: #e91e63 !important;}
 img.box.fuxia, div.fuxia img.box {background-color: #e91e63;}
+div.yellow {border-color: yellow;}
+div.yellow h1, h1.yellow {color: yellow !important;}
+img.box.yellow, div.yellow img.box {background-color: yellow;}
 div.github {border-color: var(--color-github);}
 div.github h1, a.github {color: var(--color-github) !important;}
 div.modrinth {border-color: var(--color-modrinth);}
@@ -295,7 +311,6 @@ div.curseforge h1, a.curseforge {color: var(--color-curseforge) !important;}
                 margin-top: 10px;
             }
             div.footer-bottom {position: sticky;}
-            img.logo {height: calc(6vh + 6vw + 5px);}
             div.column-half {width: 85vw;}
             ::-webkit-scrollbar {width: 10px;}
             ::-webkit-scrollbar-thumb {border-radius: 5px;}
