@@ -21,7 +21,7 @@ let navbarHtml = `
     </a>
   </li>
   <li id="projects" class="hover">
-    <a href="./index.html">
+    <a href="../projects/index.html">
       <div class="container">
         <img class="icon" src="../../img/projects.svg" alt="Projects Icon" height="25"> Projects
       </div>
