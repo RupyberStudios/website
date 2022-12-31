@@ -94,6 +94,16 @@ nav li.active {background-color: var(--color-light-2);}
 
 nav li.hover:hover {background-color: darkslategray;}
 
+li.text {
+    line-height: 30px;
+    list-style: disc;
+    list-style-position: outside;
+}
+
+ul {padding-left: 45px;}
+
+div.background ul {margin: 0 0 5px 0;}
+
 a:link {
     text-decoration: underline;
     text-decoration-thickness: 3px;
@@ -319,6 +329,11 @@ div.curseforge h1, a.curseforge {color: var(--color-curseforge) !important;}
                 nav ul {justify-content: space-around;}
                 nav li {margin-right: 5px;}
                 h1, h2, h3, span.text {max-width: 80vw;}
+                span.text, li.text {
+                    font-size: 40px;
+                    line-height: 35px;
+                }
+                img.profilepicture.icon {height: 50px; width: 50px;}
                 div.discord * {max-width: 300px;}
                 div.footer {position: relative;}
                 div.button h1 {

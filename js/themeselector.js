@@ -1,4 +1,4 @@
-let switches = document.getElementsByClassName('switch');
+let switches;
 
 let style = localStorage.getItem('style');
 
@@ -8,12 +8,16 @@ if(style == null) {
   setTheme(style);
 }
 
-for(let i of switches) {
-  i.addEventListener('click', function () {
-    let theme = this.dataset.theme;
-    setTheme(theme);
-  });
+function loadThemeSelector() {
+  switches = document.getElementsByClassName('switch');
+  for(let i of switches) {
+    i.addEventListener('click', function () {
+      let theme = this.dataset.theme;
+      setTheme(theme);
+    });
+  }
 }
+
 
 function setTheme(theme) {
   let themeCss;

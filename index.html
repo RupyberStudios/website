@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Koulen&display=swap" rel="stylesheet">
         <title>Rupyber Studios - Home</title>
     </head>
-    <body onresize="onResize()">
+    <body onload="loadMobileNavbar(); loadThemeSelector()" onresize="onResize()">
         <nav id="navbar">
             <ul>
                 <li>
@@ -39,10 +39,10 @@
                         </div>
                     </a>
                 </li>
-                <li id="about" class="hover">
-                    <a href="./pages/about/index.html">
+                <li id="installation" class="hover">
+                    <a href="./pages/installation/index.html">
                         <div class="container">
-                            <img class="icon" src="./img/about.svg" alt="About Icon" height="25"> About
+                            <img class="icon" src="./img/installation.svg" alt="Installation Icon" height="25"> Installation
                         </div>
                     </a>
                 </li>
@@ -57,6 +57,13 @@
                     <a href="./pages/posts/index.html">
                         <div class="container">
                             <img class="icon" src="./img/posts.svg" alt="Posts Icon" height="25"> Posts
+                        </div>
+                    </a>
+                </li>
+                <li id="about" class="hover">
+                    <a href="./pages/about/index.html">
+                        <div class="container">
+                            <img class="icon" src="./img/about.svg" alt="About Icon" height="25"> About
                         </div>
                     </a>
                 </li>
@@ -145,7 +152,7 @@
             </div>
         </div>
 
+        <script src="./js/navbar.js"></script>
         <script src="./js/themeselector-home.js"></script>
-        <script src="./js/mobile-navbar.js"></script>
     </body>
 </html>

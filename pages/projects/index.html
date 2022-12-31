@@ -11,68 +11,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Koulen&display=swap" rel="stylesheet">
         <title>Rupyber Studios - Projects</title>
     </head>
-    <body onresize="onResize()">
+    <body onload="loadNavbar('projects'); loadThemeSelector()" onresize="onResize()">
         <nav id="navbar">
-            <ul>
-                <li>
-                    <div class="container">
-                        <img class="icon" src="../../img/logo_square.png" alt="Rupyber Studios Logo" height="25" style="border-radius: 20%;"> Rupyber Studios
-                    </div>
-                </li>
-                <li id="menu" class="hover">
-                    <div class="container">
-                        <img class="icon" src="../../img/menu.svg" alt="Menu Icon" height="25" style="margin-right: 0;">
-                    </div>
-                </li>
-                <li id="home" class="hover">
-                    <a href="../../index.html">
-                        <div class="container">
-                            <img class="icon" src="../../img/home.svg" alt="Home Icon" height="25"> Home
-                        </div>
-                    </a>
-                </li>
-                <li id="projects" class="active hover">
-                    <a href="./index.html">
-                        <div class="container">
-                            <img class="icon" src="../../img/projects.svg" alt="Projects Icon" height="25"> Projects
-                        </div>
-                    </a>
-                </li>
-                <li id="about"  class="hover">
-                    <a href="../about/index.html">
-                        <div class="container">
-                            <img class="icon" src="../../img/about.svg" alt="About Icon" height="25"> About
-                        </div>
-                    </a>
-                </li>
-                <li id="events" class="hover">
-                    <a href="../events/index.html">
-                        <div class="container">
-                            <img class="icon" src="../../img/events.svg" alt="About Icon" height="25"> Events
-                        </div>
-                    </a>
-                </li>
-                <li id="posts" class="hover">
-                    <a href="../posts/index.html">
-                        <div class="container">
-                            <img class="icon" src="../../img/posts.svg" alt="Posts Icon" height="25"> Posts
-                        </div>
-                    </a>
-                </li>
-                <li class="hover">
-                    <div class="container">
-                        <div data-theme="light" class="switch" id="switch-light" style="height: 25px;">
-                            <img src="../../img/light.svg" alt="Light Icon" height="25">
-                        </div>
-                        <div data-theme="dark" class="switch" id="switch-dark" style="height: 25px;">
-                            <img src="../../img/dark.svg" alt="Dark Icon" height="25">
-                        </div>
-                        <div data-theme="image" class="switch" id="switch-image" style="height: 25px;">
-                            <img src="../../img/image.svg" alt="Image Icon" height="25">
-                        </div>
-                    </div>
-                </li>
-            </ul>
         </nav>
         <img src="../../img/background.png" alt="background" class="background">
 
@@ -227,8 +167,8 @@
             </div>
         </div>
 
+        <script src="../../js/navbar.js"></script>
         <script src="../../js/themeselector.js"></script>
-        <script src="../../js/mobile-navbar.js"></script>
         <script src="../../js/loader-filter.js"></script>
     </body>
 </html>
