@@ -285,6 +285,9 @@ img.box.fuxia, div.fuxia img.box {background-color: #e91e63;}
 div.yellow {border-color: yellow;}
 div.yellow h1, h1.yellow {color: yellow !important;}
 img.box.yellow, div.yellow img.box {background-color: yellow;}
+div.navy {border-color: navy;}
+div.navy h1, h1.navy {color: navy !important;}
+img.box.navy, div.navy img.box {background-color: navy;}
 div.github {border-color: var(--color-github);}
 div.github h1, a.github {color: var(--color-github) !important;}
 div.modrinth {border-color: var(--color-modrinth);}

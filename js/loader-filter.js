@@ -4,10 +4,10 @@ let filterQuilt = document.getElementById("filter-quilt");
 let mods = document.getElementById("mods");
 let footer = document.getElementById("footer");
 
-const modsForge = ["fbi-and-swat-armors"];
+const modsForge = ["fbi-and-swat-armors", "star-wars-clone-wars"];
 const modsFabric = ["improved-end", "vanilla-plus", "minecraft-legends-mod", "fbi-and-swat-armors"];
 const modsQuilt = ["improved-end", "vanilla-plus", "minecraft-legends-mod", "fbi-and-swat-armors"];
-const allMods = ["improved-end", "vanilla-plus", "minecraft-legends-mod", "fbi-and-swat-armors"];
+const allMods = ["improved-end", "vanilla-plus", "minecraft-legends-mod", "fbi-and-swat-armors", "star-wars-clone-wars"];
 
 filterForge.addEventListener("click", () => {
   if(filterForge.classList.contains("active")) {
