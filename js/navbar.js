@@ -41,7 +41,7 @@ class Tab {
             this.tab.classList.add('current');
         this.tab.addEventListener('click', () => {
             if(!this.tab.classList.contains('current'))
-                window.location.href = (match == null ? '' : '../') + (this.id == 'home' ? '../' : ('../pages/' + this.id));
+                window.location.href = (match == null ? '' : '../.') + (this.id == 'home' ? './' : ('./pages/' + this.id));
         });
         const icon = document.createElement('img');
         icon.classList.add('icon');
