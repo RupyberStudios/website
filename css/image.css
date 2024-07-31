@@ -1,14 +1,19 @@
 img.background {
     position: fixed;
-    left: 1vw;
-    width: 98vw;
+    left: 0;
+    width: 100%;
+    z-index: -1;
 }
 
-@media screen and (max-width: 700px) {
+div.footer * {
+    color: var(--color-dark-2) !important;
+}
+
+@media screen and (orientation: portrait) {
     img.background {
         width: auto;
-        height: 100%;
-        left: calc((-720px + 100vw) / 2);
+        height: 100dvh;
+        left: calc((100dvh - 100vw) / -2);
         z-index: -1;
     }
 }

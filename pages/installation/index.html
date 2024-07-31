@@ -8,20 +8,43 @@
         <link rel="icon" href="../../img/logo_square.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Koulen&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
         <title>Rupyber Studios - Installation</title>
     </head>
-    <body onload="loadNavbar('installation'); loadThemeSelector()" onresize="onResize()">
+    <body>
         <nav id="navbar">
         </nav>
+        <script src="../../js/navbar.js"></script>
         <img src="../../img/background.png" alt="background" class="background">
-        
-        <!--fabric-->
-        <div class="box yellow">
-            <img src="../../img/fabric.svg" alt="Fabric Icon" class="left" height="100" style="border-radius: 10px; background-color: #242424c0;">
-            <div class="background">
-                <h1>Fabric</h1>
-                <ul>
+
+        <div id="main" class="box">
+            <div class="box background">
+                <div class="container icon-span">
+                    <img class="icon" src="../../img/forge.svg" alt="Forge Icon">
+                    <span>Forge</span>
+                </div>
+                <ol>
+                    <li class="text">Download the <a href="https://files.minecraftforge.net/net/minecraftforge/forge/" target="_blank">Forge Loader</a></li>
+                    <li class="text">If a dependency download <a href="https://modrinth.com/mod/geckolib" target="_blank">GeckoLib</a></li>
+                    <li class="text">Download the Forge version of the mod that you want to install</li>
+                    <li class="text">Execute the Forge Installer</li>
+                    <li class="text">Open the .minecraft folder:<br>
+                        <ul>
+                            <li class="text">Windows: use Ctrl+R and type %appdata%, then go into the .minecraft/ folder</li>
+                            <li class="text">Linux: open your Home folder and go to .minecraft/ (the folder is hidden)</li>
+                        </ul>
+                    </li>
+                    <li class="text">Open the mods/ folder and move there the .jar files</li>
+                    <li class="text">Launch the Forge installation from the Laucher</li>
+                </ol>
+            </div>
+
+            <div class="box background">
+                <div class="container icon-span">
+                    <img class="icon" src="../../img/fabric.svg" alt="Fabric Icon">
+                    <span>Fabric</span>
+                </div>
+                <ol>
                     <li class="text">Download the <a href="https://fabricmc.net/use/installer/" target="_blank">Fabric Loader</a></li>
                     <li class="text">Download the <a href="https://modrinth.com/mod/fabric-api/" target="_blank">Fabric API</a></li>
                     <li class="text">If a dependency download <a href="https://modrinth.com/mod/geckolib" target="_blank">GeckoLib</a></li>
@@ -35,16 +58,15 @@
                     </li>
                     <li class="text">Open the mods/ folder and move there the .jar files</li>
                     <li class="text">Launch the Fabric installation from the Laucher</li>
-                </ul>
+                </ol>
             </div>
-        </div>
 
-        <!--quilt-->
-        <div class="box aquamarine">
-            <img src="../../img/quilt.svg" alt="Quilt Icon" class="left" height="100" style="border-radius: 10px; background-color: #242424c0;">
-            <div class="background">
-                <h1>Quilt</h1>
-                <ul>
+            <div class="box background">
+                <div class="container icon-span">
+                    <img class="icon" src="../../img/quilt.svg" alt="Quilt Icon">
+                    <span>Quilt</span>
+                </div>
+                <ol>
                     <li class="text">Download the <a href="https://quiltmc.org/en/install/" target="_blank">Quilt Loader</a></li>
                     <li class="text">Download the <a href="https://modrinth.com/mod/qsl/" target="_blank">Quilted Fabric API</a></li>
                     <li class="text">If a dependency download <a href="https://modrinth.com/mod/geckolib" target="_blank">GeckoLib</a></li>
@@ -58,39 +80,12 @@
                     </li>
                     <li class="text">Open the mods/ folder and move there the .jar files</li>
                     <li class="text">Launch the Quilt installation from the Laucher</li>
-                </ul>
+                </ol>
             </div>
         </div>
 
-        <!--forge-->
-        <div class="box crimson">
-            <img src="../../img/forge.svg" alt="Forge Icon" class="left" height="100" style="border-radius: 10px; background-color: #242424c0;">
-            <div class="background">
-                <h1>Forge</h1>
-                <ul>
-                    <li class="text">Download the <a href="https://files.minecraftforge.net/net/minecraftforge/forge/" target="_blank">Forge Loader</a></li>
-                    <li class="text">If a dependency download <a href="https://modrinth.com/mod/geckolib" target="_blank">GeckoLib</a></li>
-                    <li class="text">Download the Forge version of the mod that you want to install</li>
-                    <li class="text">Execute the Forge Installer</li>
-                    <li class="text">Open the .minecraft folder:<br>
-                        <ul>
-                            <li class="text">Windows: use Ctrl+R and type %appdata%, then go into the .minecraft/ folder</li>
-                            <li class="text">Linux: open your Home folder and go to .minecraft/ (the folder is hidden)</li>
-                        </ul>
-                    </li>
-                    <li class="text">Open the mods/ folder and move there the .jar files</li>
-                    <li class="text">Launch the Forge installation from the Laucher</li>
-                </ul>
-            </div>
+        <div class="container footer">
+            <span>Made by</span><a href="https://patreon.com/Pyrix25633ModsandSoftware" target="_blank"><span>Pyrix25633</span></a>
         </div>
-
-        <div class="footer">
-            <div>
-                Made by <a href="https://patreon.com/Pyrix25633ModsandSoftware" target="_blank">Pyrix25633</a>
-            </div>
-        </div>
-
-        <script src="../../js/navbar.js"></script>
-        <script src="../../js/themeselector.js"></script>
     </body>
 </html>

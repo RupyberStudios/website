@@ -9,150 +9,59 @@
         <link rel="icon" href="./img/logo_square.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Koulen&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
         <title>Rupyber Studios - Home</title>
     </head>
-    <body onload="loadMobileNavbar(); loadThemeSelector()" onresize="onResize()">
+    <body>
         <nav id="navbar">
-            <ul>
-                <li>
-                    <div class="container">
-                        <img class="icon" src="./img/logo_square.png" alt="Rupyber Studios Logo" height="25" style="border-radius: 20%;"> Rupyber Studios
-                    </div>
-                </li>
-                <li id="menu" class="hover">
-                    <div class="container">
-                        <img class="icon" src="./img/menu.svg" alt="Menu Icon" height="25" style="margin-right: 0;">
-                    </div>
-                </li>
-                <li id="home" class="active hover">
-                    <a href="./index.html">
-                        <div class="container">
-                            <img class="icon" src="./img/home.svg" alt="Home Icon" height="25"> Home
-                        </div>
-                    </a>
-                </li>
-                <li id="projects" class="hover">
-                    <a href="./pages/projects/index.html">
-                        <div class="container">
-                            <img class="icon" src="./img/projects.svg" alt="Projects Icon" height="25"> Projects
-                        </div>
-                    </a>
-                </li>
-                <li id="installation" class="hover">
-                    <a href="./pages/installation/index.html">
-                        <div class="container">
-                            <img class="icon" src="./img/installation.svg" alt="Installation Icon" height="25"> Installation
-                        </div>
-                    </a>
-                </li>
-                <li id="events" class="hover">
-                    <a href="./pages/events/index.html">
-                        <div class="container">
-                            <img class="icon" src="./img/events.svg" alt="About Icon" height="25"> Events
-                        </div>
-                    </a>
-                </li>
-                <li id="posts" class="hover">
-                    <a href="./pages/posts/index.html">
-                        <div class="container">
-                            <img class="icon" src="./img/posts.svg" alt="Posts Icon" height="25"> Posts
-                        </div>
-                    </a>
-                </li>
-                <li id="about" class="hover">
-                    <a href="./pages/about/index.html">
-                        <div class="container">
-                            <img class="icon" src="./img/about.svg" alt="About Icon" height="25"> About
-                        </div>
-                    </a>
-                </li>
-                <li class="hover">
-                    <div class="container">
-                        <div data-theme="light" class="switch" id="switch-light" style="height: 25px;">
-                            <img src="./img/light.svg" alt="Light Icon" height="25">
-                        </div>
-                        <div data-theme="dark" class="switch" id="switch-dark" style="height: 25px;">
-                            <img src="./img/dark.svg" alt="Dark Icon" height="25">
-                        </div>
-                        <div data-theme="image" class="switch" id="switch-image" style="height: 25px;">
-                            <img src="./img/image.svg" alt="Image Icon" height="25">
-                        </div>
-                    </div>
-                </li>
-            </ul>
         </nav>
+        <script src="./js/navbar.js"></script>
         <img src="./img/background.png" alt="background" class="background">
 
-        <div class="box lightpurple">
-            <div class="container" style="align-items: flex-start;">
-                <div class="container column-half">
-                    <div class="background lightpurple">
-                        <img src="./img/logo.png" alt="Rupyber Studios Logo" class="logo">
-                        <h1>Welcome to Rupyber Studios Website</h1>
-                        <span class="text">
-                            Here you can explore our projects, find out who we are, check the events and our posts!
-                        </span>
-                        <img src="./img/about.svg" alt="About Icon" class="box crimson" height="50" style="margin-top: 25px; margin-bottom: 10px;">
-                        <h1 class="crimson">The team</h1>
-                        <span class="text">
-                            Rupyber Studios is a team composed by a Creative Director, a Developer and some Artists.
-                            We are currently working on a Minecraft mod called Improved End.
-                            You can find out more in the <a href="./pages/about/index.html">About</a> page of this website.
-                        </span>
-                        <img src="./img/events.svg" alt="Events Icon" class="box lightgreen" height="50" style="margin-top: 25px; margin-bottom: 10px;">
-                        <h1 class="lightgreen">Plannings</h1>
-                        <span class="text">
-                            Check out the <a href="./pages/events/index.html">Events</a> page of this website to
-                            discover what we planned for the future!
-                        </span>
-                        <img src="./img/posts.svg" alt="Posts Icon" class="box limegreen" height="50" style="margin-top: 25px; margin-bottom: 10px;">
-                        <h1 class="limegreen">From us</h1>
-                        <span class="text">
-                            You can view our <a href="./pages/posts/index.html">Posts</a> in a dedicated page of this website.
-                        </span>
-                    </div>
+        <div id="main" class="box">
+            <div class="box background">
+                <img class="logo" src="./img/rupyber_studios.png" alt="Rupyber Studios Logo">
+                <h2>Welcome to Rupyber Studios Website</h2>
+                <span>Here you can explore our Projects, find out who we are, check the Events and our Posts!</span>
+                <div class="spacer"></div>
+                <div class="container icon-span">
+                    <img class="icon" src="./img/about.svg" alt="About Logo">
+                    <span>The Team</span>
                 </div>
-                <div class="container column-half crimson">
-                    <div class="background">
-                        <h1>Our latest Posts</h1>
-                    </div>
-                    <div class="background yellow">
-                        <div class="container">
-                            <img src="./img/pyrix25633.png" alt="Pyrix25633 Profile Picture" class="profilepicture icon">
-                            <h3>Pyrix25633</h3>
-                        </div>
-                        13/01/2023
-                        <h1>Star Wars Clone Wars</h1>
-                        <span class="text">
-                            I'm happy to announce that Star Wars Clone Wars, one of my mods, is now a Rupyber Studios project,
-                            1.18.2 and 1.19.2 releases are now work in progress!<br>
-                            Regards, Pyrix25633 from Rubyper Studios.
-                        </span>
-                    </div>
-                    <div class="background crimson">
-                        <div class="container">
-                            <img src="./img/pyrix25633.png" alt="Pyrix25633 Profile Picture" class="profilepicture icon">
-                            <h3>Pyrix25633</h3>
-                        </div>
-                        29/12/2022
-                        <h1>FBI And SWAT Armors</h1>
-                        <span class="text">
-                            I'm happy to announce that we will soon release a new mod to add FBI and SWAT armors to the game!<br>
-                            Regards, Pyrix25633 from Rubyper Studios.
-                        </span>
-                    </div>
+                <span>
+                    Rupyber Studios is a team composed by a Creative Director and a Chief Developer.<br>
+                    We are currently searching for Artists.<br>
+                    We are currently working on some Minecraft Mods that are listed in the <a href="./pages/projects/">Projects</a> page.<br>
+                    You can find out more in the <a href="./pages/about/">About</a> page.
+                </span>
+                <div class="spacer"></div>
+                <div class="container icon-span">
+                    <img class="icon" src="./img/events.svg" alt="Events Logo">
+                    <span>Plannings</span>
+                </div>
+                <span>
+                    Check out the <a href="./pages/events/">Events</a> page to see what we planned for the future!
+                </span>
+                <div class="spacer"></div>
+                <div class="container icon-span">
+                    <img class="icon" src="./img/posts.svg" alt="Posts Logo">
+                    <span>From us</span>
+                </div>
+                <span>
+                    Visit our <a href="./pages/posts/">Posts</a> page to get the latest news directly from the Team!
+                </span>
+            </div>
+            <div class="box background">
+                <div class="container icon-span">
+                    <img class="icon" src="./img/posts.svg" alt="Posts Icon">
+                    <span>Our latest Posts</span>
                 </div>
             </div>
         </div>
+        <script src="./js/posts.js"></script>
 
-        <div class="footer">
-            <div>
-                Made by <a href="https://patreon.com/Pyrix25633ModsandSoftware" target="_blank">Pyrix25633</a>
-            </div>
+        <div class="container footer">
+            <span>Made by</span><a href="https://patreon.com/Pyrix25633ModsandSoftware" target="_blank"><span>Pyrix25633</span></a>
         </div>
-
-        <script src="./js/navbar.js"></script>
-        <script src="./js/themeselector-home.js"></script>
     </body>
 </html>

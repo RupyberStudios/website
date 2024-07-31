@@ -4,350 +4,230 @@
     --color-dark-2: #363636;
     --color-light-1: #e6e6e6;
     --color-light-2: #5c5c5c;
-    --color-purple-dark: #590b78;
-    --color-purple-light: #cd16e2;
-    --color-youtube: #FF3333;
-    --color-discord: #5865F2;
+    --color-h2: #bcfd91;
+    --color-link: #2b98ac;
+    --color-hover: #6cb0f0c0;
+    --color-beta: #fe0000;
+    --color-release: #009134;
+    --color-discord: #5865f2;
     --color-github: #4078c0;
     --color-modrinth: #1bd96a;
     --color-curseforge: #F16436;
+    --color-creative-director: #e74c3c;
+    --color-chief-developer: #e67e22;
 }
 
-* {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
+.discord {
+    color: var(--color-discord) !important;
+    border-color: var(--color-discord) !important;
+}
+div.discord * {max-width: 700px;}
+.github {
+    color: var(--color-github) !important;
+    border-color: var(--color-github) !important;
+}
+.modrinth {
+    color: var(--color-modrinth) !important;
+    border-color: var(--color-modrinth) !important;
+}
+.curseforge {
+    color: var(--color-curseforge) !important;
+    border-color: var(--color-curseforge) !important;
+}
+.beta {
+    color: var(--color-beta) !important;
+    border-color: var(--color-beta) !important;
+}
+.release {
+    color: var(--color-release) !important;
+    border-color: var(--color-release) !important;
+}
+.creative-director {
+    color: var(--color-creative-director);
+}
+.chief-developer {
+    color: var(--color-chief-developer);
 }
 
 body {
     background-color: var(--color-light-1);
     margin: 0;
-    font-family: 'Dongle', sans-serif;
+    min-height: 100dvh;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
     color: white;
 }
-
-h1 {
-    margin: 1vh;
-    text-align: center;
-    max-width: 1000px;
-    line-height: 50px;
-    font-size: 60px;
-    font-family: 'Koulen', cursive;
-}
-h2 {
-    margin: 1vh;
-    text-align: center;
-    max-width: 1000px;
-    line-height: 40px;
-    font-size: 55px;
-}
-h3 {
-    margin: 5px;
-    text-align: center;
-    max-width: 1000px;
-    line-height: 35px;
-    font-size: 50px;
-}
-span.text {
-    text-align: center;
-    max-width: 1000px;
-}
-
-nav#navbar {
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    background-color: var(--color-dark-1);
-    z-index: 100;
-}
-
-nav ul {
-    margin: 1vh 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0 1vw;
-}
-
-nav li {
-    text-decoration: none;
-    display: inline-block;
-    margin-right: 1vw;
-    background-color: var(--color-dark-2);
-    padding: 10px 10px 8px 10px;
-    text-align: center;
-    border-radius: 10px;
-    align-self: center;
-    font-family: 'Koulen', cursive;
-    color: var(--color-light-1);
-    font-size: 25px;
-    line-height: 25px;
-}
-
-nav li.active {background-color: var(--color-light-2);}
-
-nav li.hover:hover {background-color: darkslategray;}
-
-li.text {
-    line-height: 30px;
-    list-style: disc;
-    list-style-position: outside;
-}
-
-ul {padding-left: 45px;}
-
-div.background ul {margin: 0 0 5px 0;}
-
-a:link {
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    color: white;
-}
-a:hover {color: white;}
-a:visited {color: white;}
 
 div.container {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    margin: auto;
     align-items: center;
-    justify-content: center;
-    width: 100%;
 }
-
 div.box {
     display: flex;
     flex-direction: column;
-    position: relative;
     align-items: center;
     justify-content: center;
-    border: 1vw solid;
-    border-top: 0;
-    border-bottom: 0;
-    padding: 1vh 2vw;
-    font-size: 50px;
-    line-height: 40px;
+}
+
+h2 {
+    font-size: 35px;
+    margin: 0;
+    color: var(--color-h2);
+}
+
+span {
+    font-size: 30px;
+    text-align: center;
+    max-width: 80vw;
+}
+span.small {
+    font-size: 25px;
+}
+
+a:link, a:visited {
+    color: var(--color-link);
+}
+a:hover {
+    color: var(--color-hover);
+}
+
+div.spacer {
+    height: 20px;
+}
+
+img.icon {
+    height: 30px;
+}
+img.logo {
+    max-height: 100px;
+    max-width: 80vw;
+}
+img.rounded {
+    border-radius: 5px;
+}
+img.pfp {
+    height: 50px;
+    border-radius: 50%;
+}
+img.pfp-big {
+    height: 100px;
+    border-radius: 50%;
+}
+
+.clickable {
+    cursor: pointer !important;
+}
+img.icon.clickable {
+    border-radius: 5px;
+}
+.clickable:hover {
+    background-color: var(--color-hover);
+}
+
+nav#navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: calc(100% - 20px);
+    background-color: var(--color-dark-1);
+    z-index: 100;
+}
+div.tab {
+    padding: 5px;
+    gap: 5px;
+    background-color: var(--color-dark-2);
+    border-radius: 5px;
+    width: fit-content;
+    cursor: default;
+}
+div.tab span {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+div.current {
+    background-color: var(--color-light-2);
+    cursor: default !important;
+}
+
+div#main {
+    gap: 20px;
+    padding: 20px 1vw;
+}
+
+div.background {
+    background-color: var(--color-dark-1-transparent);
+    border-radius: 20px;
+    width: fit-content;
+    padding: 20px;
+    gap: 10px;
+}
+
+div.icon-span {
+    gap: 5px;
+}
+div.tags {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div.tags span {
+    font-size: 30px;
+}
+div.tag {
+    padding: 3px 5px;
+    border: 3px solid white;
+    border-radius: 10px;
+    gap: 5px;
+}
+
+div.links {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div.link {
+    padding: 3px 5px;
+    border: 3px solid;
+    border-radius: 10px;
+    gap: 5px;
+}
+
+div.members {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 div.footer {
+    width: calc(100% - 20px);
+    gap: 5px;
+    padding: 10px;
+    justify-content: center;
+    background-color: var(--color-light-1);
     position: sticky;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-    border: 1vw solid var(--color-light-1);
-    background-color: var(--color-light-1);
-    border-top: 0;
-    border-bottom: 0;
-    height: 55px;
-    line-height: 30px;
-    font-size: 35px;
-    color: var(--color-dark-1);
+    top: 100vh;
 }
 
-div.footer-bottom {
-    position: fixed;
-    width: 98vw;
+ol, ul {
+    padding-left: 30px;
+    margin: 0;
+}
+li {
+    font-size: 20px;
 }
 
-div.footer a {color: cadetblue;}
-
-div.background {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--color-dark-1-transparent);
-    border-radius: 10px;
-    padding: 15px;
-    padding-bottom: 10px;
-    margin: 5px;
-}
-
-div.column-half {
-    width: calc(30vw + 90px); margin: 0 20px;
-}
-
-.left {
-    position: absolute;
-    left: 2vw;
-}
-.right {
-    position: absolute;
-    right: 2vw;
-}
-
-img.icon {margin-right: 10px;}
-
-img.box {background-color: var(--color-purple-light); border-radius: 15%; width: auto;}
-
-img.profilepicture {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-img.logo {height: calc(5vh + 4vw + 5px);}
-
-div.button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: 5px solid var(--color-light-2);
-    border-radius: 15px;
-    padding: 4px;
-    margin: 4px;
-}
-
-div.button.active {border-color: yellow;}
-
-div.button:hover {border-color: cadetblue;background-color: darkslategray;}
-
-div.button img.profilepicture {
-    margin-bottom: 0;
-    height: 50px;
-    width: 50px;
-    margin-left: 6px;
-}
-
-div.tags {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 3px;
-}
-
-div.tag {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    border: 4px solid white;
-    border-radius: 10px;
-    padding: 3px;
-    padding-bottom: 0;
-    margin: 0 3px 6px 3px;
-}
-
-div.tag img {
-    height: 23px;
-    margin-right: 5px;
-}
-
-div.tag span {
-    line-height: 33px;
-    margin-top: 6px;
-}
-
-span.administrator {color: #e74c3c;}
-span.chief-developer {color: #e67e22;}
-span.artist {color: #2ecc71;}
-span.animator {color: #994cb1;}
-span.sound-designer {color: #00c79c;}
-
-div.youtube {border-color: var(--color-youtube);}
-div.youtube h1 {color: var(--color-youtube);}
-div.discord {border-color: var(--color-discord);}
-div.discord h1 {color: var(--color-discord);}
-div.discord * {max-width: 700px;}
-div.lightpurple {border-color: var(--color-purple-light);}
-div.lightpurple h1 {color: var(--color-purple-light);}
-div.crimson {border-color: crimson;}
-div.crimson h1, h1.crimson {color: crimson !important;}
-img.box.crimson, div.crimson img.box {background-color: crimson;}
-div.lightgreen {border-color: lightgreen;}
-div.lightgreen h1, h1.lightgreen {color: lightgreen !important;}
-img.box.lightgreen, div.lightgreen img.box {background-color: lightgreen;}
-div.limegreen {border-color: limegreen;}
-div.limegreen h1, h1.limegreen {color: limegreen !important;}
-img.box.limegreen, div.limegreen img.box {background-color: limegreen;}
-div.aquamarine {border-color: aquamarine;}
-div.aquamarine h1, h1.aquamarine {color: aquamarine !important;}
-img.box.aquamarine, div.aquamarine img.box {background-color: aquamarine;}
-div.magenta {border-color: magenta;}
-div.magenta h1, h1.magenta {color: magenta !important;}
-img.box.magenta, div.magenta img.box {background-color: magenta;}
-div.fuxia {border-color: #e91e63;}
-div.fuxia h1, h1.fuxia {color: #e91e63 !important;}
-img.box.fuxia, div.fuxia img.box {background-color: #e91e63;}
-div.yellow {border-color: yellow;}
-div.yellow h1, h1.yellow {color: yellow !important;}
-img.box.yellow, div.yellow img.box {background-color: yellow;}
-div.navy {border-color: navy;}
-div.navy h1, h1.navy {color: navy !important;}
-img.box.navy, div.navy img.box {background-color: navy;}
-div.github {border-color: var(--color-github);}
-div.github h1, a.github {color: var(--color-github) !important;}
-div.modrinth {border-color: var(--color-modrinth);}
-div.modrinth h1, a.modrinth {color: var(--color-modrinth) !important;}
-div.curseforge {border-color: var(--color-curseforge);}
-div.curseforge h1, a.curseforge {color: var(--color-curseforge) !important;}
-
-::-webkit-scrollbar {width: 15px;}
-::-webkit-scrollbar-track {background-color: var(--color-dark-1);}
-::-webkit-scrollbar-thumb {
-    background-color: var(--color-light-1);
-    border-radius: 7.5px;
-}
-
-@media screen and (max-width: 1600px) {
-    h1, h2, h3, span.text {max-width: 700px;}
-    div.discord * {max-width: 600px;}
-
-    @media screen and (max-width: 1400px) {
-        h1, h2, h3, span.text {max-width: 600px;}
-        div.discord * {max-width: 500px;}
-
-        @media screen and (max-width: 1200px) {
-            nav li {
-                margin-top: 2px;
-                margin-bottom: 2px;
-            }
-            .left {
-                position: static;
-                margin-bottom: 10px;
-            }
-            .right {
-                position: static;
-                margin-top: 10px;
-            }
-            div.footer-bottom {position: sticky;}
-            div.column-half {width: 85vw;}
-            ::-webkit-scrollbar {width: 10px;}
-            ::-webkit-scrollbar-thumb {border-radius: 5px;}
-
-            @media screen and (max-width: 700px) {
-                nav ul {justify-content: space-around;}
-                nav li {margin-right: 5px;}
-                h1, h2, h3, span.text {max-width: 80vw;}
-                span.text, li.text {
-                    font-size: 40px;
-                    line-height: 35px;
-                }
-                img.profilepicture.icon {height: 50px; width: 50px;}
-                div.discord * {max-width: 300px;}
-                div.footer {position: relative;}
-                div.button h1 {
-                    line-height: 32px;
-                    font-size: 45px;
-                }
-                div.button img.profilepicture {
-                    height: 40px;
-                    width: 40px;
-                }
-            }
-        }
+@media screen and (max-width: 600px) {
+    nav#navbar {
+        flex-direction: column;
     }
 }

@@ -8,100 +8,44 @@
         <link rel="icon" href="../../img/logo_square.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Koulen&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
         <title>Rupyber Studios - About</title>
     </head>
-    <body onload="loadNavbar('about'); loadThemeSelector()" onresize="onResize()">
+    <body>
         <nav id="navbar">
         </nav>
+        <script src="../../js/navbar.js"></script>
         <img src="../../img/background.png" alt="background" class="background">
 
-        <!--members-->
-        <div class="box fuxia">
-            <div class="background">
-                <h1>The team</h1>
+        <div id="main" class="box">
+            <div class="box background">
+                <h2>The Team</h2>
+                <div class="container members">
+                    <div class="box">
+                        <img class="pfp-big" src="../../img/ruken.png" alt="Ruken Pfp">
+                        <span>Ruken</span>
+                        <span class="creative-director">Creative Director</span>
+                    </div>
+                    <div class="box">
+                        <img class="pfp-big" src="../../img/pyrix25633.png" alt="Pyrix25633 Pfp">
+                        <span>Pyrix25633</span>
+                        <span class="chief-developer">Chief Developer</span>
+                    </div>
+                </div>
             </div>
-            <div class="container">
-                <div class="background">
-                    <img src="../../img/ruken.png" alt="Ruken Profile Picture" class="profilepicture">
-                    <h2>Ruken</h2>
-                    <span class="administrator">Creative Director</span>
+            <div class="box background">
+                <div class="container icon-span">
+                    <img class="icon" src="../../img/discord.svg" alt="Discord Icon">
+                    <h2 class="discord">Official Discord Server</h2>
                 </div>
-                <div class="background">
-                    <img src="../../img/pyrix25633.png" alt="Pyrix25633 Profile Picture" class="profilepicture">
-                    <h2><a href="https://patreon.com/Pyrix25633ModsandSoftware" target="_blank">Pyrix25633</a></h2>
-                    <span class="chief-developer">Chief Developer</span>
-                </div>
-                <div class="background">
-                    <img src="../../img/st109.png" alt="ST109 Profile Picture" class="profilepicture">
-                    <h2>ST109</h2>
-                    <span class="artist">Artist</span>
-                </div>
-                <div class="background">
-                    <img src="../../img/skarrier.png" alt="Skarrier Profile Picture" class="profilepicture">
-                    <h2>Skarrier</h2>
-                    <span class="artist">Artist</span>
-                </div>
-                <div class="background">
-                    <img src="../../img/axolotl.png" alt="axolotl Profile Picture" class="profilepicture">
-                    <h2>axolotl</h2>
-                    <span class="artist">Artist</span>
-                </div>
-                <div class="background">
-                    <img src="../../img/hobobolin.png" alt="Hobobolin Profile Picture" class="profilepicture">
-                    <h2>Hobobolin</h2>
-                    <span class="sound-designer">Sound Designer</span>
-                </div>
+                <span>Our Server where you can explore our projects, report bugs, suggest features, partecipate in our events and much more!</span>
+                <a href="https://discord.gg/AgPTkkQveF" class="discord"><span>Join</span></a>
             </div>
         </div>
-        <!--discord-->
-        <div class="box discord">
-            <img src="../../img/discord.svg" alt="Discord Logo" class="left" height="100">
-            <div class="background">
-                <h1>Official Discord Server</h1>
-                <span class="text">Our Server where you can explore our projects, report bugs, suggest features,
-                    partecipate in our events and much more</span>
-                <div class="button discord">
-                    <h2><a href="https://discord.gg/AgPTkkQveF" target="_blank" style="color: var(--color-discord);">Join Here</a></h2>
-                </div>
-            </div>
-            <iframe src="https://discord.com/widget?id=951499476726583316&theme=dark" class="right" height="350px"
-            allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
-            </iframe>
-        </div>
-        <div class="box crimson">
-            <div class="background">
-                <h1>Our Profiles</h1>
-                <div class="container">
-                    <a href="https://github.com/RupyberStudios/" target="_blank" class="github">
-                        <div class="button github">
-                            <img src="../../img/github.svg" alt="GitHub Icon" class="profilepicture">
-                            <h1>GitHub</h1>
-                        </div>
-                    </a>
-                    <a href="https://www.curseforge.com/members/rupyberstudios/projects" target="_blank" class="curseforge">
-                        <div class="button curseforge">
-                            <img src="../../img/curseforge.svg" alt="CurseForge Icon" class="profilepicture">
-                            <h1>CurseForge</h1>
-                        </div>
-                    </a>
-                    <a href="https://modrinth.com/user/RupyberStudios" target="_blank" class="modrinth">
-                        <div class="button modrinth">
-                            <img src="../../img/modrinth.svg" alt="Modrinth Icon" class="profilepicture">
-                            <h1>Modrinth</h1>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
+        <script src="../../js/about.js"></script>
 
-        <div class="footer">
-            <div>
-                Made by <a href="https://patreon.com/Pyrix25633ModsandSoftware" target="_blank">Pyrix25633</a>
-            </div>
+        <div class="container footer">
+            <span>Made by</span><a href="https://patreon.com/Pyrix25633ModsandSoftware" target="_blank"><span>Pyrix25633</span></a>
         </div>
-
-        <script src="../../js/navbar.js"></script>
-        <script src="../../js/themeselector.js"></script>
     </body>
 </html>

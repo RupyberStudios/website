@@ -14,3 +14,6 @@ div.footer {
     border-top: 0;
     border-bottom: 0;
 }
+div.footer * {
+    color: var(--color-dark-2) !important;
+}

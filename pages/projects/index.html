@@ -8,199 +8,22 @@
         <link rel="icon" href="../../img/logo_square.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Koulen&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
         <title>Rupyber Studios - Projects</title>
     </head>
-    <body onload="loadNavbar('projects'); loadThemeSelector()" onresize="onResize()">
+    <body>
         <nav id="navbar">
         </nav>
+        <script src="../../js/navbar.js"></script>
         <img src="../../img/background.png" alt="background" class="background">
 
-        <div class="box yellow" style="padding-top: 1vh; padding-bottom: 1vh;">
-            <div class="background">
-                <span class="text">Filter:</span>
-                <div class="tags">
-                    <div class="tag button" id="filter-forge"><img src="../../img/forge.svg" alt="Forge Icon"><span>Forge</span></div>
-                    <div class="tag button" id="filter-fabric"><img src="../../img/fabric.svg" alt="Fabric Icon"><span>Fabric</span></div>
-                    <div class="tag button" id="filter-quilt"><img src="../../img/quilt.svg" alt="Quilt Icon"><span>Quilt</span></div>
-                </div>
-            </div>
+        <div id="main" class="box">
         </div>
+        <script src="../../js/projects.js"></script>
+        
 
-        <!--improved end-->
-        <div class="box limegreen" id="improved-end">
-            <img src="../../img/improved_end.png" alt="Improved End Icon" class="left" height="100" style="border-radius: 10px; border: 4px solid limegreen; background-color: limegreen;">
-            <div class="background">
-                <img src="../../img/improved_end_logo_small.png" alt="Improved End Logo" height="55" style="border-radius: 8px; margin-bottom: 10px;">
-                <div class="tags">
-                    <div class="tag"><img src="../../img/fabric.svg" alt="Fabric Icon"><span>Fabric</span></div>
-                    <div class="tag"><img src="../../img/quilt.svg" alt="Quilt Icon"><span>Quilt</span></div>
-                    <div class="tag"><img src="../../img/minecraft.svg" alt="Quilt Icon"><span>1.19.2</span></div>
-                </div>
-                <span class="text">A mod to add tons of new blocks, biomes and mobs to the end dimension</span>
-                <div class="container">
-                    <a href="https://github.com/Pyrix25633/Fabric-ImprovedEnd/releases" target="_blank" class="github">
-                        <div class="button github">
-                            <img src="../../img/github.svg" alt="GitHub Icon" class="profilepicture">
-                            <h1>GitHub</h1>
-                        </div>
-                    </a>
-                    <a href="https://www.curseforge.com/minecraft/mc-mods/improved-end" target="_blank" class="curseforge">
-                        <div class="button curseforge">
-                            <img src="../../img/curseforge.svg" alt="CurseForge Icon" class="profilepicture">
-                            <h1>CurseForge</h1>
-                        </div>
-                    </a>
-                    <a href="https://modrinth.com/mod/improved-end" target="_blank" class="modrinth">
-                        <div class="button modrinth">
-                            <img src="../../img/modrinth.svg" alt="Modrinth Icon" class="profilepicture">
-                            <h1>Modrinth</h1>
-                        </div>
-                    </a>
-                </div>
-            </div>
+        <div class="container footer">
+            <span>Made by</span><a href="https://patreon.com/Pyrix25633ModsandSoftware" target="_blank"><span>Pyrix25633</span></a>
         </div>
-        <!--vanilla plus-->
-        <div class="box magenta" id="vanilla-plus">
-            <img src="../../img/vanilla_plus.png" alt="Vanilla Plus Mod Icon" class="left" height="100" style="border-radius: 10px; border: 4px solid magenta; background-color: magenta;">
-            <div class="background">
-                <img src="../../img/vanilla_plus_logo_small.png" alt="Vanilla Plus Mod Logo" height="75" style="border-radius: 8px; margin-bottom: 10px;">
-                <div class="tags">
-                    <div class="tag"><img src="../../img/fabric.svg" alt="Fabric Icon"><span>Fabric</span></div>
-                    <div class="tag"><img src="../../img/quilt.svg" alt="Quilt Icon"><span>Quilt</span></div>
-                    <div class="tag"><img src="../../img/minecraft.svg" alt="Quilt Icon"><span>1.20.1</span></div>
-                </div>
-                <span class="text">A mod to add decoration blocks and new music discs easy to obtain in survival</span>
-                <div class="container">
-                    <a href="https://github.com/Pyrix25633/Fabric-VanillaPlus/releases" target="_blank" class="github">
-                        <div class="button github">
-                            <img src="../../img/github.svg" alt="GitHub Icon" class="profilepicture">
-                            <h1>GitHub</h1>
-                        </div>
-                    </a>
-                    <a href="https://www.curseforge.com/minecraft/mc-mods/vanilla-plus-mod" target="_blank" class="curseforge">
-                        <div class="button curseforge">
-                            <img src="../../img/curseforge.svg" alt="CurseForge Icon" class="profilepicture">
-                            <h1>CurseForge</h1>
-                        </div>
-                    </a>
-                    <a href="https://modrinth.com/mod/vanilla-plus-mod" target="_blank" class="modrinth">
-                        <div class="button modrinth">
-                            <img src="../../img/modrinth.svg" alt="Modrinth Icon" class="profilepicture">
-                            <h1>Modrinth</h1>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!--minecraft legends mod-->
-        <div class="box aquamarine" id="minecraft-legends-mod">
-            <img src="../../img/minecraft_legends_mod_beta.png" alt="Minecraft Legends Mod Icon" class="left" height="100" style="border-radius: 10px; border: 4px solid aquamarine; background-color: aquamarine;">
-            <div class="background">
-                <img src="../../img/minecraft_legends_mod_logo_small.png" alt="Minecraft Legends Mod Logo" height="75" style="border-radius: 8px; margin-bottom: 10px;">
-                <div class="tags">
-                    <div class="tag"><img src="../../img/fabric.svg" alt="Fabric Icon"><span>Fabric</span></div>
-                    <div class="tag"><img src="../../img/quilt.svg" alt="Quilt Icon"><span>Quilt</span></div>
-                    <div class="tag"><img src="../../img/minecraft.svg" alt="Quilt Icon"><span>1.19.2</span></div>
-                </div>
-                <span class="text">A mod to add some mobs, structures and items from Minecraft Legends to Minecraft</span>
-                <div class="container">
-                    <a href="https://github.com/Pyrix25633/Fabric-MinecraftLegends/releases" target="_blank" class="github">
-                        <div class="button github">
-                            <img src="../../img/github.svg" alt="GitHub Icon" class="profilepicture">
-                            <h1>GitHub</h1>
-                        </div>
-                    </a>
-                    <a href="https://www.curseforge.com/minecraft/mc-mods/minecraft-legends-mod" target="_blank" class="curseforge">
-                        <div class="button curseforge">
-                            <img src="../../img/curseforge.svg" alt="CurseForge Icon" class="profilepicture">
-                            <h1>CurseForge</h1>
-                        </div>
-                    </a>
-                    <a href="https://modrinth.com/mod/minecraft-legends-mod" target="_blank" class="modrinth">
-                        <div class="button modrinth">
-                            <img src="../../img/modrinth.svg" alt="Modrinth Icon" class="profilepicture">
-                            <h1>Modrinth</h1>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!--fbi and swat armors-->
-        <div class="box crimson" id="fbi-and-swat-armors">
-            <img src="../../img/fbi_and_swat_armors.png" alt="FBI And SWAT Armors Icon" class="left" height="100" style="border-radius: 10px; border: 4px solid crimson; background-color: crimson;">
-            <div class="background">
-                <img src="../../img/fbi_and_swat_armors_logo_small.png" alt="FBI And SWAT Armors Logo" height="125" style="border-radius: 8px; margin-bottom: 10px;">
-                <div class="tags">
-                    <div class="tag"><img src="../../img/forge.svg" alt="Forge Icon"><span>Forge</span></div>
-                    <div class="tag"><img src="../../img/fabric.svg" alt="Fabric Icon"><span>Fabric</span></div>
-                    <div class="tag"><img src="../../img/quilt.svg" alt="Quilt Icon"><span>Quilt</span></div>
-                    <div class="tag"><img src="../../img/minecraft.svg" alt="Quilt Icon"><span>1.20.1</span></div>
-                </div>
-                <span class="text">A mod to add FBI and SWAT armors to Minecraft</span>
-                <div class="container">
-                    <a href="https://github.com/Pyrix25633/Fabric-Forge-FbiAndSwatArmors/releases" target="_blank" class="github">
-                        <div class="button github">
-                            <img src="../../img/github.svg" alt="GitHub Icon" class="profilepicture">
-                            <h1>GitHub</h1>
-                        </div>
-                    </a>
-                    <a href="https://www.curseforge.com/minecraft/mc-mods/fbi-and-swat-armors" target="_blank" class="curseforge">
-                        <div class="button curseforge">
-                            <img src="../../img/curseforge.svg" alt="CurseForge Icon" class="profilepicture">
-                            <h1>CurseForge</h1>
-                        </div>
-                    </a>
-                    <a href="https://modrinth.com/mod/fbi-and-swat-armors" target="_blank" class="modrinth">
-                        <div class="button modrinth">
-                            <img src="../../img/modrinth.svg" alt="Modrinth Icon" class="profilepicture">
-                            <h1>Modrinth</h1>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!--star wars clone wars-->
-        <div class="box navy" id="star-wars-clone-wars">
-            <img src="../../img/star_wars_clone_wars.png" alt="Star Wars Clone Wars Icon" class="left" height="100" style="border-radius: 10px; border: 4px solid navy; background-color: navy;">
-            <div class="background">
-                <img src="../../img/star_wars_clone_wars_logo_small.png" alt="Star Wars Clone Wars Logo" height="125" style="border-radius: 8px; margin-bottom: 10px;">
-                <div class="tags">
-                    <div class="tag"><img src="../../img/forge.svg" alt="Forge Icon"><span>Forge</span></div>
-                    <div class="tag"><img src="../../img/minecraft.svg" alt="Quilt Icon"><span>1.19.4</span></div>
-                </div>
-                <span class="text">A mod to add clones, battle droids and much more to Minecraft</span>
-                <div class="container">
-                    <a href="https://github.com/Pyrix25633/Forge-StarWarsCloneWars/releases" target="_blank" class="github">
-                        <div class="button github">
-                            <img src="../../img/github.svg" alt="GitHub Icon" class="profilepicture">
-                            <h1>GitHub</h1>
-                        </div>
-                    </a>
-                    <a href="https://www.curseforge.com/minecraft/mc-mods/star-wars-clone-wars" target="_blank" class="curseforge">
-                        <div class="button curseforge">
-                            <img src="../../img/curseforge.svg" alt="CurseForge Icon" class="profilepicture">
-                            <h1>CurseForge</h1>
-                        </div>
-                    </a>
-                    <a href="https://modrinth.com/mod/star-wars-clone-wars" target="_blank" class="modrinth">
-                        <div class="button modrinth">
-                            <img src="../../img/modrinth.svg" alt="Modrinth Icon" class="profilepicture">
-                            <h1>Modrinth</h1>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer" id="footer">
-            <div>
-                Made by <a href="https://patreon.com/Pyrix25633ModsandSoftware" target="_blank">Pyrix25633</a>
-            </div>
-        </div>
-
-        <script src="../../js/navbar.js"></script>
-        <script src="../../js/themeselector.js"></script>
-        <script src="../../js/loader-filter.js"></script>
     </body>
 </html>

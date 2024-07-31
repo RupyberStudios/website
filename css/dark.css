@@ -19,12 +19,8 @@ nav#navbar {
     background-color: var(--color-light-1);
 }
 
-nav li {
-    color: white;
-}
-
-div.footer {
-    color: white;
+div.footer * {
+    color: white !important;
 }
 
 ::-webkit-scrollbar-track {background-color: var(--color-light-1);}
