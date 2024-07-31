@@ -63,14 +63,14 @@ class Event {
     }
 }
 
-const minecraftLegendsModBeta = new Event('minecraft_legends_mod', beta, {dateTime: new Date('2022/10/31 14:00 UTC'),
-    location: discordServer}, 'The first Beta version of Minecraft Legends Mod released to public.'
+const minecraftLegendsModBeta = new Event('minecraft_legends_mod', beta, { dateTime: new Date('2022/10/31 14:00 UTC'),
+    location: discordServer }, 'The first Beta version of Minecraft Legends Mod released to public.'
 );
-const improvedEndRelease = new Event('improved_end', release, {dateTime: new Date('2022/09/01 15:00 UTC'),
-    location: discordServer}, 'The first Official version of Improved End released to public.'
+const improvedEndRelease = new Event('improved_end', release, { dateTime: new Date('2022/09/01 15:00 UTC'),
+    location: discordServer }, 'The first Official version of Improved End released to public.'
 );
-const improvedEndBeta = new Event('improved_end', beta, {dateTime: new Date('2022/08/10 15:00 UTC'),
-    location: discordServer}, 'The first Beta version of Improved End released to public.'
+const improvedEndBeta = new Event('improved_end', beta, { dateTime: new Date('2022/08/10 15:00 UTC'),
+    location: discordServer }, 'The first Beta version of Improved End released to public.'
 );
 
 const main = new Main([minecraftLegendsModBeta, improvedEndRelease, improvedEndBeta]);
