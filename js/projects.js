@@ -69,9 +69,9 @@ const _1_19_4 = new VersionTag('1.19.4');
 const _1_20_1 = new VersionTag('1.20.1');
 const _1_20_4 = new VersionTag('1.20.4');
 const _1_20_6 = new VersionTag('1.20.6');
-const _1_21 = new VersionTag('1.21');
+const _1_21_1 = new VersionTag('1.21.1');
 
-tags.push(_1_18_2, _1_19_4, _1_20_6, _1_21);
+tags.push(_1_18_2, _1_19_4, _1_20_6, _1_21_1);
 
 class Filter {
     filter;
@@ -221,7 +221,7 @@ const starWarsCloneWars = new Project('star_wars_clone_wars', [forge, _1_20_1], 
     'Adds Clones, Battle Droids, Dimensions and much more.',
     { github: 'Forge-StarWarsCloneWars', curseforge: 'star-wars-clone-wars', modrinth: 'star-wars-clone-wars' }
 );
-const fabricTps = new Project('fabric_tps', [fabric, quilt, _1_21], [_1_18_2, _1_19_4, _1_20_6],
+const fabricTps = new Project('fabric_tps', [fabric, quilt, _1_21_1], [_1_18_2, _1_19_4, _1_20_6],
     'Adds an equivalent to the \'/forge tps\' command.',
     { github: 'Fabric-FabricTPS', curseforge: 'fabric-tps', modrinth: 'fabric-tps' }
 );
