@@ -213,7 +213,7 @@ const minecraftLegendsMod = new Project('minecraft_legends_mod', [fabric, quilt,
     'Adds add some Mobs, Structures and Items from Minecraft Legends.',
     { github: 'Fabric-MinecraftLegends', curseforge: 'minecraft-legends-mod', modrinth: 'minecraft-legends-mod' }
 );
-const fbiAndSwatArmors = new Project('fbi_and_swat_armors', [forge, fabric, quilt, _1_20_4], [_1_19_4],
+const fbiAndSwatArmors = new Project('fbi_and_swat_armors', [forge, fabric, quilt, _1_21_1], [_1_19_4, _1_20_4, _1_20_6],
     'Adds FBI and SWAT armors.',
     { github: 'Fabric-Forge-FbiAndSwatArmors', curseforge: 'fbi-and-swat-armors', modrinth: 'fbi-and-swat-armors' }
 );
