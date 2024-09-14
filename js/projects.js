@@ -222,7 +222,7 @@ const fabricTps = new Project('fabric_tps', [fabric, quilt, _1_21_1], [_1_18_2, 
 );
 const exploreDecorateCreate = new Project('explore_decorate_create', [fabric, quilt, _1_20_4], [_1_20_1],
     'Modpack designed to improve Exploration, Decoration and Creation.',
-    { curseforge: 'explore-decorate-create', modrinth: 'explore-decorate-create' }
+    { modrinth: 'explore-decorate-create' }
 );
 const starWarsCloneWars = new Project('star_wars_clone_wars', [forge, _1_20_1], [_1_18_2, _1_19_4],
     'Adds Clones, Battle Droids, Dimensions and much more.',
